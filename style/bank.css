@@ -27,6 +27,7 @@ header section {
           align-items: center;
   background-color: #8d979b;
   color: #ffff;
+  font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   padding: 0 20px;
   height: 6vh;
@@ -91,6 +92,7 @@ header .sec2 .nav-links {
 }
 
 header .sec2 a {
+  font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   font-size: 18px;
   color: #12082D;
@@ -128,5 +130,44 @@ header .sec2 a {
     background-color: #ffff;
     color: #12082D;
   }
+}
+
+main {
+  background-image: url(/style/imgs/mbg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 278px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .texts {
+  padding-right: 7vw;
+}
+
+main h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  width: 100%;
+  padding: 0px 14vw 3vh 4vw;
+  text-align: left;
+}
+
+main p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 20px;
+  width: 100%;
+  padding: 0 14vw 0 4vw;
+  color: #12082D;
+  text-align: left;
 }
 /*# sourceMappingURL=bank.css.map */
