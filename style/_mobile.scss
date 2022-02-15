@@ -17,10 +17,12 @@ header {
             .none {
                 display: flex;
             }
+            .dropdown{
+                width: 0px;
+            }
             .nnn {
                 width: 20px;
             }
-            height: 10vh;
             .findme {
                 .ngn {
                     padding: 0 6px;
@@ -39,8 +41,8 @@ header {
         .menu {
             width: 38px;
         }
-        img {
-            width: 120px;
+        .corebank{
+            width: 139px;
         }
         .none {
             display: none;
@@ -66,11 +68,8 @@ header {
             .nav-links {
                 display: flex;
             }
-            img {
-                width: 145px;
-            }
             .get {
-                border: 1px solid black;
+                border: 1px solid $btn;
                 width: 136px;
                 height: 43px;
                 border-radius: 10px;
@@ -84,7 +83,7 @@ header {
         }
     }
 }
-main{
+main {
     background-image: url(/style/imgs/mbg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -93,20 +92,38 @@ main{
     display: flex;
     text-align: center;
     align-items: center;
+    @media screen and (min-width: 800px) {
+        background-image: url(/style/imgs/guywithtea.png);
+        height: 90vh;
+        .right-arrow {
+            display: none;
+        }
+        .left-arrow {
+            width: 40px;
+            margin-top: 8vh;
+        }
+    }
 
-    .texts{
+    .texts {
         padding-right: 7vw;
     }
 
-    h1{
-        font-family:$myfamily;
+    h1 {
+        font-family: $myfamily;
         font-size: 24px;
         font-weight: 700;
+        color: $tagcolor;
         width: 100%;
         padding: 0px 14vw 3vh 4vw;
         text-align: left;
+        @media screen and (min-width: 800px) {
+            font-size: 50px;
+            padding: 0 56vw 0 3vw;
+            line-height: 1.1;
+            margin-bottom: 3vh;
+        }
     }
-    p{
+    p {
         font-family: $myfamily;
         font-size: 13px;
         font-weight: 600;
@@ -115,5 +132,10 @@ main{
         padding: 0 14vw 0 4vw;
         color: $tagcolor;
         text-align: left;
+        @media screen and (min-width: 800px) {
+            font-size: 18px;
+            padding: 3vh 53vw 0 3vw;
+            line-height: 1.6;
+        }
     }
 }
