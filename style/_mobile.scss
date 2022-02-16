@@ -17,7 +17,7 @@ header {
             .none {
                 display: flex;
             }
-            .dropdown{
+            .dropdown {
                 width: 0px;
             }
             .nnn {
@@ -41,7 +41,7 @@ header {
         .menu {
             width: 38px;
         }
-        .corebank{
+        .corebank {
             width: 139px;
         }
         .none {
@@ -83,7 +83,7 @@ header {
         }
     }
 }
-main {
+.mainview {
     background-image: url(/style/imgs/mbg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -136,6 +136,142 @@ main {
             font-size: 18px;
             padding: 3vh 53vw 0 3vw;
             line-height: 1.6;
+        }
+    }
+}
+article {
+    background-image: url(/style/imgs/bg2A.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .article-image {
+        display: none;
+        width: 100%;
+        @media screen and (min-width: 800px) {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto auto;
+            padding: 0 10vw;
+
+            .box {
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                height: 20vh;
+                width: 12vw;
+                padding-top: 3vh;
+                align-items: center;
+                text-align: center;
+
+                p {
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: black;
+                    line-height: 2;
+                }
+            }
+        }
+    }
+}
+.article2 {
+    text-align: center;
+    line-height: 1.8;
+    padding: 1em;
+    h4 {
+        font-size: 14px;
+        font-weight: 500;
+        text-align: left;
+        padding: 2vh 0 0 3vw;
+        margin-top: 6vh;
+        @media screen and (min-width: 800px) {
+            margin-top: 18vh;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 2;
+            padding: 0 0 0 10vw;
+        }
+    }
+    h1 {
+        font-size: 28px;
+        text-align: left;
+        padding: 0 0 0 2.7vw;
+        margin-bottom: 3vh;
+        @media screen and (min-width: 800px) {
+            margin-bottom: 9vh;
+            font-size: 46px;
+            font-weight: bold;
+            color: $tagcolor;
+            padding: 0 0 0 10vw;
+        }
+    }
+    @media screen and (max-width: 800px) {
+        .noneA {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 800px) {
+        text-align: left;
+        .square {
+            width: 20px;
+        }
+    }
+
+    .articleflex {
+        .boxA {
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            padding: 1em;
+            @media screen and (min-width: 800px) {
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                width: 21vw;
+            }
+            img {
+                padding-top: 2vh;
+                width: 240px;
+                @media screen and (min-width: 800px) {
+                    padding: 4vh 0 0 1vw;
+                    width: 240px;
+                }
+            }
+        }
+        h2 {
+            text-align: left;
+            font-size: 20px;
+            padding: 2vh 0 0 2vw;
+            @media screen and (min-width: 800px) {
+                padding: 4vh 0 0 1vw;
+            }
+        }
+        p {
+            text-align: left;
+            font-size: 15px;
+            font-weight: 500;
+            padding: 0 0 0 2vw;
+            @media screen and (min-width: 800px) {
+                line-height: 1.9;
+                padding: 0 2vw 0 1vw;
+            }
+        }
+        @media screen and (min-width: 800px) {
+            display: flex;
+            justify-content: space-evenly;
+            padding: 1em 98px 0 33px;
+
+            .noneA {
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                width: 21vw;
+
+                img {
+                    padding: 5vh 0 0 2vw;
+                    width: 240px;
+                }
+                p {
+                    line-height: 1.9;
+                    padding: 0 4vw 0 1vw;
+                }
+            }
+        }
+    }
+    .scroll{
+        padding: 2vh 0 0 0;
+        @media screen and (min-width:800px) {
+            text-align: center;
         }
     }
 }
