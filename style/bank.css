@@ -222,7 +222,7 @@ article .article-image {
   article .article-image .box {
     -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    height: 20vh;
+    height: 23vh;
     width: 12vw;
     padding-top: 3vh;
     -webkit-box-align: center;
@@ -231,7 +231,7 @@ article .article-image {
     text-align: center;
   }
   article .article-image .box p {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 600;
     color: black;
     line-height: 2;
@@ -304,31 +304,35 @@ article .article-image {
   .article2 .articleflex .boxA {
     -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 21vw;
+    width: 26vw;
   }
+}
+
+.article2 .articleflex .boxA p {
+  padding: 0 2vw 0 0;
+  text-align: left;
 }
 
 .article2 .articleflex .boxA img {
   padding-top: 2vh;
-  width: 240px;
+  width: 78vw;
 }
 
 @media screen and (min-width: 800px) {
   .article2 .articleflex .boxA img {
-    padding: 4vh 0 0 1vw;
-    width: 240px;
+    width: 17vw;
   }
 }
 
 .article2 .articleflex h2 {
   text-align: left;
   font-size: 20px;
-  padding: 2vh 0 0 2vw;
+  padding: 2vh 0 0 0vw;
 }
 
 @media screen and (min-width: 800px) {
   .article2 .articleflex h2 {
-    padding: 4vh 0 0 1vw;
+    padding: 5vh 0 0 0vw;
   }
 }
 
@@ -342,7 +346,7 @@ article .article-image {
 @media screen and (min-width: 800px) {
   .article2 .articleflex p {
     line-height: 1.9;
-    padding: 0 2vw 0 1vw;
+    padding: 0 5vw 0 0vw;
   }
 }
 
@@ -359,15 +363,21 @@ article .article-image {
   .article2 .articleflex .noneA {
     -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 21vw;
+    width: 26vw;
   }
-  .article2 .articleflex .noneA img {
-    padding: 5vh 0 0 2vw;
-    width: 240px;
+  .article2 .articleflex .noneA .displayed {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    padding: 1em;
   }
   .article2 .articleflex .noneA p {
     line-height: 1.9;
-    padding: 0 4vw 0 1vw;
+    padding: 0 3vw 0 0vw;
+  }
+  .article2 .articleflex .noneA img {
+    width: 20vw;
   }
 }
 
