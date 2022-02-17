@@ -1,6 +1,11 @@
-@mixin flex1 {
+@mixin flex1 ($text:center,$justify:space-between) {
     display: flex;
-    justify-content: space-between;
-    text-align: center;
-    align-items: center;
+    justify-content: $justify;
+    text-align: $text;
+    align-items: $text;
+}
+@mixin media{
+    @media screen and (min-width: $midwidth) {
+        @content;
+    }
 }

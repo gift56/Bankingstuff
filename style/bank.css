@@ -14,7 +14,7 @@ header {
   width: 100%;
 }
 
-header section {
+header .section1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,26 +33,26 @@ header section {
   height: 6vh;
 }
 
-header section .none {
+header .section1 .none {
   display: none;
 }
 
 @media screen and (min-width: 800px) {
-  header section .none {
+  header .section1 .none {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  header section .dropdown {
+  header .section1 .dropdown {
     width: 0px;
   }
-  header section .nnn {
+  header .section1 .nnn {
     width: 20px;
   }
-  header section .findme .ngn {
+  header .section1 .findme .ngn {
     padding: 0 6px;
   }
-  header section div {
+  header .section1 div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -83,10 +83,6 @@ header .sec2 .corebank {
   width: 139px;
 }
 
-header .sec2 .none {
-  display: none;
-}
-
 header .sec2 .nav-links {
   display: none;
 }
@@ -103,11 +99,6 @@ header .sec2 a {
 @media screen and (min-width: 800px) {
   header .sec2 .mobilenone {
     display: none;
-  }
-  header .sec2 .none {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
   header .sec2 .nav-links {
     display: -webkit-box;
@@ -175,7 +166,7 @@ header .sec2 a {
 @media screen and (min-width: 800px) {
   .mainview h1 {
     font-size: 50px;
-    padding: 0 56vw 0 3vw;
+    padding: 0 55vw 0 3vw;
     line-height: 1.1;
     margin-bottom: 3vh;
   }
@@ -320,7 +311,7 @@ article .article-image {
 
 @media screen and (min-width: 800px) {
   .article2 .articleflex .boxA img {
-    width: 17vw;
+    width: 20vw;
   }
 }
 
@@ -358,7 +349,7 @@ article .article-image {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    padding: 1em 98px 0 33px;
+    padding: 1em 98px 0 9vw;
   }
   .article2 .articleflex .noneA {
     -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
