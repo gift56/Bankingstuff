@@ -91,7 +91,7 @@ header .sec2 a {
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   font-size: 18px;
-  color: #12082D;
+  color: #12082d;
   padding: 12px;
   font-weight: 600;
 }
@@ -106,17 +106,17 @@ header .sec2 a {
     display: flex;
   }
   header .sec2 .get {
-    border: 1px solid linear-gradient(180deg, #EF9B11 0%, #405558 100%);
+    border: 1px solid linear-gradient(180deg, #ef9b11 0%, #405558 100%);
     width: 136px;
     height: 43px;
     border-radius: 10px;
     color: #ffff;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#EF9B11), to(#405558));
-    background-image: linear-gradient(180deg, #EF9B11 0%, #405558 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ef9b11), to(#405558));
+    background-image: linear-gradient(180deg, #ef9b11 0%, #405558 100%);
   }
   header .sec2 .get:hover {
     background-color: #ffff;
-    color: #12082D;
+    color: #12082d;
   }
 }
 
@@ -157,7 +157,7 @@ header .sec2 a {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 24px;
   font-weight: 700;
-  color: #12082D;
+  color: #12082d;
   width: 100%;
   padding: 0px 14vw 3vh 4vw;
   text-align: left;
@@ -179,7 +179,7 @@ header .sec2 a {
   line-height: 20px;
   width: 100%;
   padding: 0 14vw 0 4vw;
-  color: #12082D;
+  color: #12082d;
   text-align: left;
 }
 
@@ -191,26 +191,26 @@ header .sec2 a {
   }
 }
 
-article {
+.articles {
   background-image: url(/style/imgs/bg2A.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-article .article-image {
+.articles .article-image {
   display: none;
   width: 100%;
 }
 
 @media screen and (min-width: 800px) {
-  article .article-image {
+  .articles .article-image {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: auto auto auto auto auto auto;
         grid-template-columns: auto auto auto auto auto auto;
     padding: 0 10vw;
   }
-  article .article-image .box {
+  .articles .article-image .box {
     -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     height: 23vh;
@@ -221,7 +221,7 @@ article .article-image {
             align-items: center;
     text-align: center;
   }
-  article .article-image .box p {
+  .articles .article-image .box p {
     font-size: 20px;
     font-weight: 600;
     color: black;
@@ -265,7 +265,7 @@ article .article-image {
     margin-bottom: 9vh;
     font-size: 46px;
     font-weight: bold;
-    color: #12082D;
+    color: #12082d;
     padding: 0 0 0 10vw;
   }
 }
@@ -279,6 +279,7 @@ article .article-image {
 @media screen and (min-width: 800px) {
   .article2 {
     text-align: left;
+    padding: 0px;
   }
   .article2 .square {
     width: 20px;
@@ -349,7 +350,7 @@ article .article-image {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    padding: 1em 98px 0 9vw;
+    padding: 1em 43px 0 7vw;
   }
   .article2 .articleflex .noneA {
     -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -380,5 +381,86 @@ article .article-image {
   .article2 .scroll {
     text-align: center;
   }
+}
+
+.section3 {
+  width: 100%;
+}
+
+.section3 .textflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(239, 155, 17, 0.5)), to(rgba(64, 85, 88, 0.5)));
+  background-image: linear-gradient(180deg, rgba(239, 155, 17, 0.5) 0%, rgba(64, 85, 88, 0.5) 100%);
+}
+
+.section3 .textflex .phone {
+  text-align: center;
+}
+
+.section3 .textflex .text {
+  padding: 1em;
+}
+
+.section3 .textflex .text h5 {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #12082d;
+  line-height: 0vh;
+}
+
+.section3 .textflex .text h1 {
+  color: #ffff;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 11vh;
+}
+
+.section3 .textflex .text p {
+  color: #ffff;
+  font-size: 16px;
+  font-weight: 500;
+  font-weight: Arial, Helvetica, sans-serif;
+  line-height: 1.8;
+}
+
+.section3 .textflex .text .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 2vh;
+}
+
+.section3 .textflex .text .buttons a {
+  text-decoration: none;
+  color: #ffff;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  width: 60vw;
+  height: 8vh;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.section3 .textflex .text .buttons .create {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ef9b11), to(#405558));
+  background-image: linear-gradient(180deg, #ef9b11 0%, #405558 100%);
+  border: 1px solid linear-gradient(180deg, #ef9b11 0%, #405558 100%);
+}
+
+.section3 .textflex .text .buttons .open {
+  border: 1px solid;
 }
 /*# sourceMappingURL=bank.css.map */

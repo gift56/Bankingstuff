@@ -13,7 +13,7 @@ header {
         .none {
             display: none;
         }
-       @include media {
+        @include media {
             .none {
                 display: flex;
             }
@@ -133,7 +133,7 @@ header {
         }
     }
 }
-article {
+.articles {
     background-image: url(/style/imgs/bg2A.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -202,6 +202,7 @@ article {
 
     @include media {
         text-align: left;
+        padding: 0px;
         .square {
             width: 20px;
         }
@@ -215,7 +216,7 @@ article {
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                 width: 26vw;
             }
-            p{
+            p {
                 padding: 0 2vw 0 0;
                 text-align: left;
             }
@@ -225,7 +226,6 @@ article {
                 @include media {
                     width: 20vw;
                 }
-            
             }
         }
         h2 {
@@ -249,13 +249,13 @@ article {
         @include media {
             display: flex;
             justify-content: space-evenly;
-            padding: 1em 98px 0 9vw;
+            padding: 1em 43px 0 7vw;
 
             .noneA {
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                 width: 26vw;
 
-                .displayed{
+                .displayed {
                     display: grid;
                     grid-template-columns: auto;
                     padding: 1em;
@@ -265,17 +265,76 @@ article {
                     line-height: 1.9;
                     padding: 0 3vw 0 0vw;
                 }
-                img{
+                img {
                     width: 20vw;
                 }
             }
         }
     }
-    .scroll{
+    .scroll {
         padding: 2vh 0 0 0;
         @include media {
             text-align: center;
         }
     }
-   
+}
+.section3 {
+    width: 100%;
+    .textflex {
+        display: flex;
+        flex-direction: column-reverse;
+        background-image: $section3bg;
+
+        .phone {
+            text-align: center;
+        }
+        .text{
+            padding: 1em;
+
+            h5{
+                font-size: 15px;
+                font-weight: 600;
+                font-family: $myfamily;
+                color: $tagcolor;
+                line-height: 0vh;
+            }
+            h1{
+                color: $textcolor1;
+                font-size: 28px;
+                font-weight: 600;
+                font-family: $myfamily;
+                line-height: 11vh;
+            }
+            p{
+                color: $textcolor1;
+                font-size: 16px;
+                font-weight: 500;
+                font-weight: $myfamily;
+                line-height: 1.8;
+            }
+            .buttons{
+                display: flex;
+                flex-direction: column;
+                padding-top: 2vh;
+                a{
+                    text-decoration: none;
+                    color: $textcolor1;
+                    border-radius: 10px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    width: 60vw;
+                    height: 8vh;
+                    text-align: center;
+                    padding-top: 15px;
+                }
+                .create{
+                    background-image: $btn;
+                    border: 1px solid $btn;
+                }
+                .open{
+                    border: 1px solid;
+                }
+            }
+        }
+    }
 }
