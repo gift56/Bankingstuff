@@ -4,3 +4,4 @@
 #working on the articles
 #Added mixin to midscreen
 #Completed the mobile view for section3
+#Completed section3

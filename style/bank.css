@@ -399,8 +399,27 @@ header .sec2 a {
   background-image: linear-gradient(180deg, rgba(239, 155, 17, 0.5) 0%, rgba(64, 85, 88, 0.5) 100%);
 }
 
+@media screen and (min-width: 800px) {
+  .section3 .textflex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .section3 .textflex .phone {
   text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  .section3 .textflex .phone {
+    text-align: -webkit-center;
+    width: 100%;
+  }
+  .section3 .textflex .phone img {
+    width: 35vw;
+  }
 }
 
 .section3 .textflex .text {
@@ -415,6 +434,15 @@ header .sec2 a {
   line-height: 0vh;
 }
 
+@media screen and (min-width: 800px) {
+  .section3 .textflex .text h5 {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8vh 0 0 5vw;
+    line-height: 2;
+  }
+}
+
 .section3 .textflex .text h1 {
   color: #ffff;
   font-size: 28px;
@@ -423,12 +451,28 @@ header .sec2 a {
   line-height: 11vh;
 }
 
+@media screen and (min-width: 800px) {
+  .section3 .textflex .text h1 {
+    font-size: 40px;
+    color: #12082d;
+    padding: 5vh 0 4vh 5.6vw;
+  }
+}
+
 .section3 .textflex .text p {
   color: #ffff;
   font-size: 16px;
   font-weight: 500;
   font-weight: Arial, Helvetica, sans-serif;
   line-height: 1.8;
+}
+
+@media screen and (min-width: 800px) {
+  .section3 .textflex .text p {
+    font-size: 18px;
+    color: #12082d;
+    padding: 0vh 4vw 0 5vw;
+  }
 }
 
 .section3 .textflex .text .buttons {
@@ -442,6 +486,17 @@ header .sec2 a {
   padding-top: 2vh;
 }
 
+@media screen and (min-width: 800px) {
+  .section3 .textflex .text .buttons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 8vh 0 0 5vw;
+    gap: 1vw;
+  }
+}
+
 .section3 .textflex .text .buttons a {
   text-decoration: none;
   color: #ffff;
@@ -452,6 +507,14 @@ header .sec2 a {
   height: 8vh;
   text-align: center;
   padding-top: 15px;
+}
+
+@media screen and (min-width: 800px) {
+  .section3 .textflex .text .buttons a {
+    width: 16.7vw;
+    height: 59px;
+    padding-top: 20px;
+  }
 }
 
 .section3 .textflex .text .buttons .create {

@@ -284,9 +284,19 @@ header {
         display: flex;
         flex-direction: column-reverse;
         background-image: $section3bg;
+        @include media {
+            flex-direction: row;
+        }
 
         .phone {
             text-align: center;
+            @include media {
+                text-align: -webkit-center;
+                width: 100%;
+                img{
+                    width: 35vw;
+                }
+            }
         }
         .text{
             padding: 1em;
@@ -297,6 +307,12 @@ header {
                 font-family: $myfamily;
                 color: $tagcolor;
                 line-height: 0vh;
+                @include media {
+                    font-size: 18px;
+                    font-weight: 500;
+                    padding:  8vh 0 0 5vw;
+                    line-height: 2;
+                }
             }
             h1{
                 color: $textcolor1;
@@ -304,6 +320,11 @@ header {
                 font-weight: 600;
                 font-family: $myfamily;
                 line-height: 11vh;
+                @include media {
+                    font-size: 40px;
+                    color: $tagcolor;
+                    padding:  5vh 0 4vh 5.6vw;
+                }
             }
             p{
                 color: $textcolor1;
@@ -311,11 +332,21 @@ header {
                 font-weight: 500;
                 font-weight: $myfamily;
                 line-height: 1.8;
+                @include media {
+                    font-size: 18px;
+                    color: $tagcolor;
+                    padding:  0vh 4vw 0 5vw;
+                }
             }
             .buttons{
                 display: flex;
                 flex-direction: column;
                 padding-top: 2vh;
+                @include media {
+                    flex-direction: row;
+                    padding: 8vh 0 0 5vw;
+                    gap: 1vw;
+                }
                 a{
                     text-decoration: none;
                     color: $textcolor1;
@@ -326,6 +357,11 @@ header {
                     height: 8vh;
                     text-align: center;
                     padding-top: 15px;
+                    @include media {
+                        width: 16.7vw;
+                        height: 59px;
+                        padding-top: 20px;
+                    }
                 }
                 .create{
                     background-image: $btn;
