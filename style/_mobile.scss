@@ -344,7 +344,7 @@ header {
                 padding-top: 2vh;
                 @include media {
                     flex-direction: row;
-                    padding: 8vh 0 0 5vw;
+                    padding: 8vh 0 3vh 5vw;
                     gap: 1vw;
                 }
                 a{
@@ -369,6 +369,75 @@ header {
                 }
                 .open{
                     border: 1px solid;
+                }
+            }
+        }
+    }
+}
+.section4{
+    width: 100%;
+
+    .contents{
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1em;
+        background-image: url(/style/imgs/section4bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .imagesflex{
+            width: 77%;
+            margin-top: 56px;
+        }
+        .text4{
+            width: 100%;
+            align-self: center;
+            h5{
+                font-size: 12px;
+                font-weight: 900;
+                text-align: left;
+                color: #EAB221;
+                line-height: 1.8;
+            }
+            h6{
+                font-size: 18px;
+                font-weight: 600;
+                color: #2F2F2F;
+                text-align: left;
+                line-height: 2.8;
+            }
+            .links-button{
+                display: flex;
+                flex-direction: column-reverse;
+                
+
+                .apple{
+                    display: flex;
+                    border: 1px solid $textcolor1;
+                    background-color: $textcolor1;
+                    border-radius: 13px;
+                    padding: 1em;
+                    margin-top: 2vh;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .down{
+                    padding-left: 2vw;
+                }
+                .playstore{
+                    display: flex;
+                    border: 1px solid $textcolor1;
+                    background-color: $textcolor1;
+                    border-radius: 13px;
+                    padding: 1em;
+                    align-items: center;
+                    justify-content: center;
+                }
+                a{
+                    text-decoration: none;
+                    color: #2F2F2F;
+                    font-size: 11px;
+                    font-weight: 800;
                 }
             }
         }

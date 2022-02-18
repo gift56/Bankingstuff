@@ -492,7 +492,7 @@ header .sec2 a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding: 8vh 0 0 5vw;
+    padding: 8vh 0 3vh 5vw;
     gap: 1vw;
   }
 }
@@ -525,5 +525,104 @@ header .sec2 a {
 
 .section3 .textflex .text .buttons .open {
   border: 1px solid;
+}
+
+.section4 {
+  width: 100%;
+}
+
+.section4 .contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 1em;
+  background-image: url(/style/imgs/section4bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section4 .contents .imagesflex {
+  width: 77%;
+  margin-top: 56px;
+}
+
+.section4 .contents .text4 {
+  width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.section4 .contents .text4 h5 {
+  font-size: 12px;
+  font-weight: 900;
+  text-align: left;
+  color: #EAB221;
+  line-height: 1.8;
+}
+
+.section4 .contents .text4 h6 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2F2F2F;
+  text-align: left;
+  line-height: 2.8;
+}
+
+.section4 .contents .text4 .links-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+
+.section4 .contents .text4 .links-button .apple {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #ffff;
+  background-color: #ffff;
+  border-radius: 13px;
+  padding: 1em;
+  margin-top: 2vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section4 .contents .text4 .links-button .down {
+  padding-left: 2vw;
+}
+
+.section4 .contents .text4 .links-button .playstore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #ffff;
+  background-color: #ffff;
+  border-radius: 13px;
+  padding: 1em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section4 .contents .text4 .links-button a {
+  text-decoration: none;
+  color: #2F2F2F;
+  font-size: 11px;
+  font-weight: 800;
 }
 /*# sourceMappingURL=bank.css.map */

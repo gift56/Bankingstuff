@@ -5,3 +5,4 @@
 #Added mixin to midscreen
 #Completed the mobile view for section3
 #Completed section3
+#completed the mobileview for section 4
