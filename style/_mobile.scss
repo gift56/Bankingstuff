@@ -475,6 +475,29 @@ header {
     .text5 {
         padding: 1em;
         background-color: rgba(255, 187, 11, 0.5);
+        .yellowcube {
+            height: 18px;
+            margin-top: 2px;
+            @include media {
+                width: 29px;
+                height: 25px;
+            }
+        }
+
+        .scroll {
+            padding: 8px 0 3vh 0;
+            text-align: center;
+            @include media {
+                display: none;
+            }
+        }
+        .team {
+            display: flex;
+            gap: 10px;
+            @include media {
+                padding: 3vh 0 0 4vw;
+            }
+        }
 
         h5 {
             font-size: 15px;
@@ -482,6 +505,10 @@ header {
             color: $tagcolor;
             font-family: $myfamily;
             line-height: 1.5;
+            @include media {
+                font-size: 18px;
+                margin-top: 3px;
+            }
         }
         h1 {
             font-size: 27px;
@@ -489,41 +516,76 @@ header {
             font-family: $myfamily;
             line-height: 2.2;
             color: $tagcolor;
+            padding-bottom: 5vh;
+            @include media {
+                font-size: 46px;
+                padding-left: 4vw;
+            }
         }
         .textbox {
             width: 100%;
+
+            @include media {
+                display: flex;
+                justify-content: space-evenly;
+                gap: 2vw;
+            }
+            .none {
+                display: none;
+                @include media {
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
 
             .mobilebox {
                 border: 1px solid $textcolor1;
                 border-radius: 12px;
                 padding: 1em;
                 background-color: $textcolor1;
+                @include media {
+                    width: 377px;
+                    
+                    .sharep {
+                        padding: 41px 0 46px 0;
+                    }
+                }
 
                 h4 {
                     font-weight: bold;
                     font-size: 18px;
                     line-height: 26px;
                     padding: 0 0 3vh 2vw;
+                    @include media {
+                        padding: 0 0 3vh 0;
+                    }
                 }
                 p {
                     font-weight: 500;
                     font-size: 16px;
                     line-height: 36px;
                 }
-                .rankingstars{
+                .rankingstars {
                     display: flex;
                     justify-content: space-evenly;
-                    .star{
+                    .star {
                         width: 100%;
                         padding-top: 9px;
+                        @include media {
+                            width: 58%;
+                        }
                     }
-                    .plusno{
+                    .plusno {
                         width: 100%;
+                        @include media {
+                            width: 89%;
+                        }
+                        p {
+                            font-size: 10px;
+                            font-weight: 500;
+                        }
                     }
                 }
-            }
-            .none {
-                display: none;
             }
         }
     }

@@ -681,6 +681,42 @@ header .sec2 a {
   background-color: rgba(255, 187, 11, 0.5);
 }
 
+.section5 .text5 .yellowcube {
+  height: 18px;
+  margin-top: 2px;
+}
+
+@media screen and (min-width: 800px) {
+  .section5 .text5 .yellowcube {
+    width: 29px;
+    height: 25px;
+  }
+}
+
+.section5 .text5 .scroll {
+  padding: 8px 0 3vh 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  .section5 .text5 .scroll {
+    display: none;
+  }
+}
+
+.section5 .text5 .team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+@media screen and (min-width: 800px) {
+  .section5 .text5 .team {
+    padding: 3vh 0 0 4vw;
+  }
+}
+
 .section5 .text5 h5 {
   font-size: 15px;
   font-weight: 600;
@@ -689,16 +725,59 @@ header .sec2 a {
   line-height: 1.5;
 }
 
+@media screen and (min-width: 800px) {
+  .section5 .text5 h5 {
+    font-size: 18px;
+    margin-top: 3px;
+  }
+}
+
 .section5 .text5 h1 {
   font-size: 27px;
   font-weight: 700;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 2.2;
   color: #12082d;
+  padding-bottom: 5vh;
+}
+
+@media screen and (min-width: 800px) {
+  .section5 .text5 h1 {
+    font-size: 46px;
+    padding-left: 4vw;
+  }
 }
 
 .section5 .text5 .textbox {
   width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .section5 .text5 .textbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    gap: 2vw;
+  }
+}
+
+.section5 .text5 .textbox .none {
+  display: none;
+}
+
+@media screen and (min-width: 800px) {
+  .section5 .text5 .textbox .none {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .section5 .text5 .textbox .mobilebox {
@@ -708,11 +787,26 @@ header .sec2 a {
   background-color: #ffff;
 }
 
+@media screen and (min-width: 800px) {
+  .section5 .text5 .textbox .mobilebox {
+    width: 377px;
+  }
+  .section5 .text5 .textbox .mobilebox .sharep {
+    padding: 41px 0 46px 0;
+  }
+}
+
 .section5 .text5 .textbox .mobilebox h4 {
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
   padding: 0 0 3vh 2vw;
+}
+
+@media screen and (min-width: 800px) {
+  .section5 .text5 .textbox .mobilebox h4 {
+    padding: 0 0 3vh 0;
+  }
 }
 
 .section5 .text5 .textbox .mobilebox p {
@@ -735,11 +829,24 @@ header .sec2 a {
   padding-top: 9px;
 }
 
+@media screen and (min-width: 800px) {
+  .section5 .text5 .textbox .mobilebox .rankingstars .star {
+    width: 58%;
+  }
+}
+
 .section5 .text5 .textbox .mobilebox .rankingstars .plusno {
   width: 100%;
 }
 
-.section5 .text5 .textbox .none {
-  display: none;
+@media screen and (min-width: 800px) {
+  .section5 .text5 .textbox .mobilebox .rankingstars .plusno {
+    width: 89%;
+  }
+}
+
+.section5 .text5 .textbox .mobilebox .rankingstars .plusno p {
+  font-size: 10px;
+  font-weight: 500;
 }
 /*# sourceMappingURL=bank.css.map */
