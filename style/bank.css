@@ -535,13 +535,11 @@ header .sec2 a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
   padding: 1em;
   background-image: url(/style/imgs/section4bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  width: 100%;
 }
 
 .section4 .contents .imagesflex {
@@ -549,27 +547,58 @@ header .sec2 a {
   margin-top: 56px;
 }
 
+@media screen and (min-width: 800px) {
+  .section4 .contents .imagesflex {
+    width: 100%;
+    text-align: right;
+    margin-right: 12vw;
+  }
+  .section4 .contents .imagesflex .smartphone {
+    width: 20vw;
+  }
+}
+
 .section4 .contents .text4 {
   width: 100%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  margin-top: auto;
+}
+
+@media screen and (min-width: 800px) {
+  .section4 .contents .text4 {
+    margin-top: 14vh;
+  }
 }
 
 .section4 .contents .text4 h5 {
   font-size: 12px;
   font-weight: 900;
   text-align: left;
-  color: #EAB221;
+  color: #eab221;
   line-height: 1.8;
+}
+
+@media screen and (min-width: 800px) {
+  .section4 .contents .text4 h5 {
+    font-size: 14px;
+    margin-left: 6vw;
+  }
 }
 
 .section4 .contents .text4 h6 {
   font-size: 18px;
   font-weight: 600;
-  color: #2F2F2F;
+  color: #2f2f2f;
   text-align: left;
   line-height: 2.8;
+}
+
+@media screen and (min-width: 800px) {
+  .section4 .contents .text4 h6 {
+    font-size: 37px;
+  }
 }
 
 .section4 .contents .text4 .links-button {
@@ -580,6 +609,16 @@ header .sec2 a {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+}
+
+@media screen and (min-width: 800px) {
+  .section4 .contents .text4 .links-button {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 1vw;
+  }
 }
 
 .section4 .contents .text4 .links-button .apple {
@@ -619,10 +658,88 @@ header .sec2 a {
           justify-content: center;
 }
 
+@media screen and (min-width: 800px) {
+  .section4 .contents .text4 .links-button .playstore {
+    height: 72px;
+    margin-top: 2vh;
+  }
+}
+
 .section4 .contents .text4 .links-button a {
   text-decoration: none;
-  color: #2F2F2F;
+  color: #2f2f2f;
   font-size: 11px;
   font-weight: 800;
+}
+
+.section5 {
+  width: 100%;
+}
+
+.section5 .text5 {
+  padding: 1em;
+  background-color: rgba(255, 187, 11, 0.5);
+}
+
+.section5 .text5 h5 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #12082d;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+.section5 .text5 h1 {
+  font-size: 27px;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2.2;
+  color: #12082d;
+}
+
+.section5 .text5 .textbox {
+  width: 100%;
+}
+
+.section5 .text5 .textbox .mobilebox {
+  border: 1px solid #ffff;
+  border-radius: 12px;
+  padding: 1em;
+  background-color: #ffff;
+}
+
+.section5 .text5 .textbox .mobilebox h4 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 0 0 3vh 2vw;
+}
+
+.section5 .text5 .textbox .mobilebox p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 36px;
+}
+
+.section5 .text5 .textbox .mobilebox .rankingstars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.section5 .text5 .textbox .mobilebox .rankingstars .star {
+  width: 100%;
+  padding-top: 9px;
+}
+
+.section5 .text5 .textbox .mobilebox .rankingstars .plusno {
+  width: 100%;
+}
+
+.section5 .text5 .textbox .none {
+  display: none;
 }
 /*# sourceMappingURL=bank.css.map */

@@ -293,15 +293,15 @@ header {
             @include media {
                 text-align: -webkit-center;
                 width: 100%;
-                img{
+                img {
                     width: 35vw;
                 }
             }
         }
-        .text{
+        .text {
             padding: 1em;
 
-            h5{
+            h5 {
                 font-size: 15px;
                 font-weight: 600;
                 font-family: $myfamily;
@@ -310,11 +310,11 @@ header {
                 @include media {
                     font-size: 18px;
                     font-weight: 500;
-                    padding:  8vh 0 0 5vw;
+                    padding: 8vh 0 0 5vw;
                     line-height: 2;
                 }
             }
-            h1{
+            h1 {
                 color: $textcolor1;
                 font-size: 28px;
                 font-weight: 600;
@@ -323,10 +323,10 @@ header {
                 @include media {
                     font-size: 40px;
                     color: $tagcolor;
-                    padding:  5vh 0 4vh 5.6vw;
+                    padding: 5vh 0 4vh 5.6vw;
                 }
             }
-            p{
+            p {
                 color: $textcolor1;
                 font-size: 16px;
                 font-weight: 500;
@@ -335,10 +335,10 @@ header {
                 @include media {
                     font-size: 18px;
                     color: $tagcolor;
-                    padding:  0vh 4vw 0 5vw;
+                    padding: 0vh 4vw 0 5vw;
                 }
             }
-            .buttons{
+            .buttons {
                 display: flex;
                 flex-direction: column;
                 padding-top: 2vh;
@@ -347,7 +347,7 @@ header {
                     padding: 8vh 0 3vh 5vw;
                     gap: 1vw;
                 }
-                a{
+                a {
                     text-decoration: none;
                     color: $textcolor1;
                     border-radius: 10px;
@@ -363,55 +363,78 @@ header {
                         padding-top: 20px;
                     }
                 }
-                .create{
+                .create {
                     background-image: $btn;
                     border: 1px solid $btn;
                 }
-                .open{
+                .open {
                     border: 1px solid;
                 }
             }
         }
     }
 }
-.section4{
+.section4 {
     width: 100%;
 
-    .contents{
+    .contents {
         display: flex;
-        justify-content: space-evenly;
         padding: 1em;
         background-image: url(/style/imgs/section4bg.png);
         background-repeat: no-repeat;
         background-size: cover;
+        width: 100%;
 
-        .imagesflex{
+        .imagesflex {
             width: 77%;
             margin-top: 56px;
+            @include media {
+                width: 100%;
+                text-align: right;
+                margin-right: 12vw;
+
+                .smartphone {
+                    width: 20vw;
+                }
+            }
         }
-        .text4{
+        .text4 {
             width: 100%;
             align-self: center;
-            h5{
+            margin-top: auto;
+            @include media {
+                margin-top: 14vh;
+            }
+            h5 {
                 font-size: 12px;
                 font-weight: 900;
                 text-align: left;
-                color: #EAB221;
+                color: #eab221;
                 line-height: 1.8;
+                @include media {
+                    font-size: 14px;
+                    margin-left: 6vw;
+                }
             }
-            h6{
+            h6 {
                 font-size: 18px;
                 font-weight: 600;
-                color: #2F2F2F;
+                color: #2f2f2f;
                 text-align: left;
                 line-height: 2.8;
+                @include media {
+                    font-size: 37px;
+                }
             }
-            .links-button{
+            .links-button {
                 display: flex;
                 flex-direction: column-reverse;
-                
+                @include media {
+                    flex-direction: row;
+                    gap: 1vw;
+                }
 
-                .apple{
+                .apple {
                     display: flex;
                     border: 1px solid $textcolor1;
                     background-color: $textcolor1;
@@ -421,10 +444,10 @@ header {
                     align-items: center;
                     justify-content: center;
                 }
-                .down{
+                .down {
                     padding-left: 2vw;
                 }
-                .playstore{
+                .playstore {
                     display: flex;
                     border: 1px solid $textcolor1;
                     background-color: $textcolor1;
@@ -432,13 +455,75 @@ header {
                     padding: 1em;
                     align-items: center;
                     justify-content: center;
+                    @include media {
+                        height: 72px;
+                        margin-top: 2vh;
+                    }
                 }
-                a{
+                a {
                     text-decoration: none;
-                    color: #2F2F2F;
+                    color: #2f2f2f;
                     font-size: 11px;
                     font-weight: 800;
                 }
+            }
+        }
+    }
+}
+.section5 {
+    width: 100%;
+    .text5 {
+        padding: 1em;
+        background-color: rgba(255, 187, 11, 0.5);
+
+        h5 {
+            font-size: 15px;
+            font-weight: 600;
+            color: $tagcolor;
+            font-family: $myfamily;
+            line-height: 1.5;
+        }
+        h1 {
+            font-size: 27px;
+            font-weight: 700;
+            font-family: $myfamily;
+            line-height: 2.2;
+            color: $tagcolor;
+        }
+        .textbox {
+            width: 100%;
+
+            .mobilebox {
+                border: 1px solid $textcolor1;
+                border-radius: 12px;
+                padding: 1em;
+                background-color: $textcolor1;
+
+                h4 {
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 26px;
+                    padding: 0 0 3vh 2vw;
+                }
+                p {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 36px;
+                }
+                .rankingstars{
+                    display: flex;
+                    justify-content: space-evenly;
+                    .star{
+                        width: 100%;
+                        padding-top: 9px;
+                    }
+                    .plusno{
+                        width: 100%;
+                    }
+                }
+            }
+            .none {
+                display: none;
             }
         }
     }
