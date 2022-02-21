@@ -235,6 +235,10 @@ header .sec2 a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .articles .article-image .box p {
     font-size: 20px;
@@ -553,8 +557,8 @@ header .sec2 a {
 
 @media screen and (min-width: 800px) {
   .section3 .textflex .text .buttons a {
-    width: 16.7px;
-    height: 59px;
+    width: 145.7px;
+    height: 60px;
     padding-top: 20px;
   }
 }

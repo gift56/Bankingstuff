@@ -6,7 +6,7 @@ header {
         background-color: $firstbgcolor;
         color: $textcolor1;
         font-family: $myfamily;
-        @include WH (100%,6vh);
+        @include WH(100%, 6vh);
         padding: 10px 20px;
 
         .none {
@@ -62,7 +62,7 @@ header {
             }
             .get {
                 border: 1px solid $btn;
-                @include WH (136px,43px);
+                @include WH(136px, 43px);
                 border-radius: 10px;
                 color: $textcolor1;
                 background-image: $btn;
@@ -81,7 +81,7 @@ header {
     background-image: url(/style/imgs/mbg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    @include WH (100%,278px);
+    @include WH(100%, 278px);
     @include media {
         background-image: url(/style/imgs/guywithtea.png);
         height: 90vh;
@@ -139,9 +139,10 @@ header {
 
             .box {
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                @include WH (12vw,23vh);
+                @include WH(12vw, 23vh);
                 padding-top: 3vh;
                 @include textme;
+                flex-direction: column;
 
                 p {
                     @include font(20px, 600, normal);
@@ -330,11 +331,11 @@ header {
                     text-decoration: none;
                     color: $textcolor1;
                     border-radius: 10px;
-                    @include WH (60vw,8vh);
+                    @include WH(60vw, 8vh);
                     text-align: center;
                     padding-top: 15px;
                     @include media {
-                        @include WH (16.7px,59px);
+                        @include WH(145.7px, 60px);
                         padding-top: 20px;
                     }
                 }
@@ -447,7 +448,7 @@ header {
             height: 18px;
             margin-top: 2px;
             @include media {
-               @include WH;
+                @include WH;
             }
         }
 
@@ -680,7 +681,7 @@ footer {
         background-color: $footercolor;
         border-radius: 8px;
         padding: 1em;
-        @include WH (179px,61px);
+        @include WH(179px, 61px);
         margin-bottom: 6vh;
         @include media {
             margin-bottom: 2vh;
@@ -693,7 +694,7 @@ footer {
         background-color: $textcolor1;
         border-radius: 8px;
         padding: 1em;
-        @include WH (179px,61px);
+        @include WH(179px, 61px);
         margin-bottom: 6vh;
     }
     a {
