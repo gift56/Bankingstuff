@@ -8,6 +8,11 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+}
+
+html {
+  width: 100%;
 }
 
 header {
