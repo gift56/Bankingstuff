@@ -38,7 +38,7 @@ header .section1 .none {
   display: none;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   header .section1 {
     height: 49px;
   }
@@ -107,7 +107,36 @@ header .sec2 a {
   padding: 12px;
 }
 
-@media screen and (min-width: 800px) {
+header .sec2 .slideshow {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #8d979b;
+  text-decoration: underline;
+  margin-top: 41px;
+  width: 69vw;
+  left: 0;
+}
+
+@media screen and (min-width: 1000px) {
+  header .sec2 .slideshow {
+    position: static;
+    margin-top: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: inherit;
+        -ms-flex-pack: inherit;
+            justify-content: inherit;
+    background-color: transparent;
+    text-decoration: none;
+  }
   header .sec2 .mobilenone {
     display: none;
   }
@@ -151,7 +180,7 @@ header .sec2 a {
   height: 278px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .mainview {
     background-image: url(/style/imgs/guywithtea.png);
     height: 90vh;
@@ -180,7 +209,7 @@ header .sec2 a {
   text-align: left;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .mainview h1 {
     font-size: 50px;
     padding: 0 55vw 0 3vw;
@@ -201,7 +230,7 @@ header .sec2 a {
   text-align: left;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .mainview p {
     font-size: 18px;
     padding: 3vh 53vw 0 3vw;
@@ -220,7 +249,7 @@ header .sec2 a {
   width: 100%;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .articles .article-image {
     display: -ms-grid;
     display: grid;
@@ -275,7 +304,7 @@ header .sec2 a {
   margin-top: 6vh;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .article2 h4 {
     font-size: 18px;
     font-weight: 500;
@@ -294,7 +323,7 @@ header .sec2 a {
   margin-bottom: 3vh;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .article2 h1 {
     font-size: 46px;
     font-weight: bold;
@@ -312,7 +341,7 @@ header .sec2 a {
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .article2 {
     text-align: left;
     padding: 0px;
@@ -328,7 +357,7 @@ header .sec2 a {
   padding: 1em;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .article2 .articleflex .boxA {
     -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -346,7 +375,7 @@ header .sec2 a {
   width: 78vw;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .article2 .articleflex .boxA img {
     width: 20vw;
   }
@@ -358,7 +387,7 @@ header .sec2 a {
   padding: 2vh 0 0 0vw;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .article2 .articleflex h2 {
     padding: 5vh 0 0 0vw;
   }
@@ -373,14 +402,14 @@ header .sec2 a {
   padding: 0 0 0 2vw;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .article2 .articleflex p {
     line-height: 1.9;
     padding: 0 5vw 0 0vw;
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .article2 .articleflex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -415,7 +444,7 @@ header .sec2 a {
   padding: 2vh 0 0 0;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .article2 .scroll {
     text-align: center;
     padding-bottom: 6px;
@@ -438,7 +467,7 @@ header .sec2 a {
   background-image: linear-gradient(180deg, rgba(239, 155, 17, 0.5) 0%, rgba(64, 85, 88, 0.5) 100%);
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .section3 .textflex {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -451,7 +480,7 @@ header .sec2 a {
   text-align: center;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .section3 .textflex .phone {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -483,7 +512,7 @@ header .sec2 a {
   line-height: 0vh;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .section3 .textflex .text h5 {
     font-size: 18px;
     font-weight: 500;
@@ -503,7 +532,7 @@ header .sec2 a {
   line-height: 11vh;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .section3 .textflex .text h1 {
     font-size: 40px;
     color: #12082d;
@@ -520,7 +549,7 @@ header .sec2 a {
   line-height: 1.8;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .section3 .textflex .text p {
     font-size: 18px;
     color: #12082d;
@@ -539,7 +568,7 @@ header .sec2 a {
   padding-top: 2vh;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .section3 .textflex .text .buttons {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -564,7 +593,7 @@ header .sec2 a {
   padding-top: 15px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .section3 .textflex .text .buttons a {
     width: 145.7px;
     height: 60px;
@@ -602,7 +631,7 @@ header .sec2 a {
   margin-top: 56px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .section4 .contents .imagesflex {
     width: 100%;
     text-align: right;
@@ -621,7 +650,7 @@ header .sec2 a {
   margin-top: auto;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .section4 .contents .text4 {
     margin-top: 14vh;
   }
@@ -637,7 +666,7 @@ header .sec2 a {
   line-height: 1.8;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .section4 .contents .text4 h5 {
     font-size: 14px;
     margin-left: 6vw;
@@ -654,7 +683,7 @@ header .sec2 a {
   line-height: 2.8;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .section4 .contents .text4 h6 {
     font-size: 37px;
   }
@@ -670,7 +699,7 @@ header .sec2 a {
           flex-direction: column-reverse;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .section4 .contents .text4 .links-button {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -719,7 +748,7 @@ header .sec2 a {
   padding: 1em;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .section4 .contents .text4 .links-button .playstore {
     height: 72px;
     margin-top: 2vh;
@@ -749,7 +778,7 @@ header .sec2 a {
   margin-top: 2px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .section5 .text5 .yellowcube {
     width: 29px;
     height: 25px;
@@ -761,7 +790,7 @@ header .sec2 a {
   text-align: center;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .section5 .text5 .scroll {
     display: none;
   }
@@ -774,7 +803,7 @@ header .sec2 a {
   gap: 10px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .section5 .text5 .team {
     padding: 3vh 0 0 4vw;
   }
@@ -789,7 +818,7 @@ header .sec2 a {
   line-height: 1.5;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .section5 .text5 h5 {
     font-size: 18px;
     margin-top: 3px;
@@ -806,7 +835,7 @@ header .sec2 a {
   padding-bottom: 5vh;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .section5 .text5 h1 {
     font-size: 46px;
     padding-left: 4vw;
@@ -817,7 +846,7 @@ header .sec2 a {
   width: 100%;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .section5 .text5 .textbox {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -834,7 +863,7 @@ header .sec2 a {
   display: none;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .section5 .text5 .textbox .none {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -853,7 +882,7 @@ header .sec2 a {
   background-color: #ffff;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .section5 .text5 .textbox .mobilebox {
     width: 377px;
   }
@@ -871,7 +900,7 @@ header .sec2 a {
   padding: 0 0 3vh 2vw;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .section5 .text5 .textbox .mobilebox h4 {
     padding: 0 0 3vh 0;
   }
@@ -899,7 +928,7 @@ header .sec2 a {
   padding-top: 9px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .section5 .text5 .textbox .mobilebox .rankingstars .star {
     width: 58%;
   }
@@ -909,7 +938,7 @@ header .sec2 a {
   width: 100%;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   .section5 .text5 .textbox .mobilebox .rankingstars .plusno {
     width: 89%;
   }
@@ -935,7 +964,7 @@ footer {
   padding: 1em;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   footer {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -944,7 +973,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   footer .meetme {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -971,13 +1000,13 @@ footer .firstpart p {
   padding-bottom: 20px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   footer .firstpart p {
     padding-bottom: 30px;
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   footer .firstpart {
     width: 100%;
     padding: 5px 7vw 0 5vw;
@@ -988,7 +1017,7 @@ footer .none {
   display: none;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   footer .none {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1014,7 +1043,7 @@ footer .quicks {
   gap: 21vw;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   footer .quicks {
     gap: 0px;
   }
@@ -1024,7 +1053,7 @@ footer .quicks .save {
   padding: 0 0 5vh 0;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   footer .quicks .save {
     padding: 0 0 0 0;
   }
@@ -1071,7 +1100,7 @@ footer .contact p {
   padding: 0px 21vw 3vh 0;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   footer .contact p {
     font-size: 15px;
     padding: 2vh 0 1vw 0;
@@ -1117,13 +1146,13 @@ footer .contact .footerstore {
           flex-direction: column;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   footer .contact .footerstore {
     display: none;
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   footer .contact {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1151,7 +1180,7 @@ footer .footerplaystore {
   margin-bottom: 6vh;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   footer .footerplaystore {
     margin-bottom: 2vh;
   }
@@ -1185,7 +1214,7 @@ footer a {
   color: #12082d;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
   footer a {
     font-size: 13px;
     font-weight: 600;

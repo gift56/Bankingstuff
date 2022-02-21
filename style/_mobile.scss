@@ -39,6 +39,7 @@ header {
         @include flex1;
         width: 100%;
         padding: 1em;
+
         .menu {
             width: 38px;
         }
@@ -48,6 +49,8 @@ header {
         }
         .nav-links {
             display: none;
+            // display: flex;
+            // flex-direction: column;
         }
         a {
             @include font(18px, 600, normal);
@@ -55,7 +58,25 @@ header {
             color: $tagcolor;
             padding: 12px;
         }
+        .slideshow {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            background-color: $firstbgcolor;
+            text-decoration: underline;
+            margin-top: 41px;
+            width: 69vw;
+            left: 0;
+        }
         @include media {
+            .slideshow {
+                position: static;
+                margin-top: 0;
+                flex-direction: row;
+                justify-content: inherit;
+                background-color: transparent;
+                text-decoration: none;
+            }
             .mobilenone {
                 display: none;
             }
