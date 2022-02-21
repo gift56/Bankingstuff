@@ -30,7 +30,7 @@ header .section1 {
   color: #ffff;
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
-  height: 6vh;
+  height: 34px;
   padding: 10px 20px;
 }
 
@@ -39,6 +39,9 @@ header .section1 .none {
 }
 
 @media screen and (min-width: 800px) {
+  header .section1 {
+    height: 49px;
+  }
   header .section1 .none {
     display: -webkit-box;
     display: -ms-flexbox;
