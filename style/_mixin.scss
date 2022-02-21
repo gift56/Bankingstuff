@@ -1,11 +1,31 @@
-@mixin flex1 ($text:center,$justify:space-between) {
+@mixin flex1($justify: space-between) {
     display: flex;
     justify-content: $justify;
-    text-align: $text;
-    align-items: $text;
 }
-@mixin media{
+@mixin media {
     @media screen and (min-width: $midwidth) {
         @content;
     }
+}
+@mixin align($align: center, $texts: center) {
+    display: flex;
+    align-self: $align;
+    text-align: $texts;
+}
+@mixin textme($meet: center, $come: center,$just:center) {
+    display: flex;
+    align-items: $meet;
+    text-align: $come;
+    justify-content: $just;
+
+}
+@mixin font ($size:15px ,$weight:normal, $style:normal) {
+    font-size: $size;
+    font-weight: $weight;
+    font-style: $style;
+    font-family: $myfamily;
+}
+@mixin WH ($wid:29px,$high:25px) {
+    width: $wid;
+    height: $high;
 }

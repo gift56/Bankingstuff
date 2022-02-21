@@ -6,30 +6,30 @@ header {
         background-color: $firstbgcolor;
         color: $textcolor1;
         font-family: $myfamily;
-        width: 100%;
-        padding: 0 20px;
-        height: 6vh;
+        @include WH (100%,6vh);
+        padding: 10px 20px;
 
         .none {
             display: none;
         }
         @include media {
             .none {
-                display: flex;
+                @include align;
             }
             .dropdown {
                 width: 0px;
             }
             .nnn {
-                width: 20px;
+                width: 30px;
             }
             .findme {
                 .ngn {
                     padding: 0 6px;
+                    align-self: center;
                 }
             }
             div {
-                display: flex;
+                @include align;
                 padding: 0 8px;
             }
         }
@@ -48,12 +48,10 @@ header {
             display: none;
         }
         a {
-            font-family: $myfamily;
+            @include font(18px, 600, normal);
             text-decoration: none;
-            font-size: 18px;
             color: $tagcolor;
             padding: 12px;
-            font-weight: 600;
         }
         @include media {
             .mobilenone {
@@ -64,11 +62,11 @@ header {
             }
             .get {
                 border: 1px solid $btn;
-                width: 136px;
-                height: 43px;
+                @include WH (136px,43px);
                 border-radius: 10px;
                 color: $textcolor1;
                 background-image: $btn;
+                padding-left: 29px;
                 &:hover {
                     background-color: $textcolor1;
                     color: $tagcolor;
@@ -78,14 +76,12 @@ header {
     }
 }
 .mainview {
+    display: flex;
+    @include textme;
     background-image: url(/style/imgs/mbg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 278px;
-    display: flex;
-    text-align: center;
-    align-items: center;
+    @include WH (100%,278px);
     @include media {
         background-image: url(/style/imgs/guywithtea.png);
         height: 90vh;
@@ -103,9 +99,7 @@ header {
     }
 
     h1 {
-        font-family: $myfamily;
-        font-size: 24px;
-        font-weight: 700;
+        @include font(27px, 700, normal);
         color: $tagcolor;
         width: 100%;
         padding: 0px 14vw 3vh 4vw;
@@ -118,9 +112,7 @@ header {
         }
     }
     p {
-        font-family: $myfamily;
-        font-size: 13px;
-        font-weight: 600;
+        @include font(13px, 600, normal);
         line-height: 20px;
         width: 100%;
         padding: 0 14vw 0 4vw;
@@ -147,15 +139,12 @@ header {
 
             .box {
                 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                height: 23vh;
-                width: 12vw;
+                @include WH (12vw,23vh);
                 padding-top: 3vh;
-                align-items: center;
-                text-align: center;
+                @include textme;
 
                 p {
-                    font-size: 20px;
-                    font-weight: 600;
+                    @include font(20px, 600, normal);
                     color: black;
                     line-height: 2;
                 }
@@ -168,15 +157,13 @@ header {
     line-height: 1.8;
     padding: 1em;
     h4 {
-        font-size: 14px;
-        font-weight: 500;
+        @include font(14px, 500, normal);
         text-align: left;
         padding: 2vh 0 0 3vw;
         margin-top: 6vh;
         @include media {
+            @include font(18px, 500, normal);
             margin-top: 18vh;
-            font-size: 18px;
-            font-weight: 500;
             line-height: 2;
             padding: 0 0 0 10vw;
         }
@@ -187,9 +174,8 @@ header {
         padding: 0 0 0 2.7vw;
         margin-bottom: 3vh;
         @include media {
+            @include font(46px, bold, normal);
             margin-bottom: 9vh;
-            font-size: 46px;
-            font-weight: bold;
             color: $tagcolor;
             padding: 0 0 0 10vw;
         }
@@ -237,9 +223,8 @@ header {
             }
         }
         p {
+            @include font(15px, 500, normal);
             text-align: left;
-            font-size: 15px;
-            font-weight: 500;
             padding: 0 0 0 2vw;
             @include media {
                 line-height: 1.9;
@@ -247,8 +232,7 @@ header {
             }
         }
         @include media {
-            display: flex;
-            justify-content: space-evenly;
+            @include flex1(space-evenly);
             padding: 1em 43px 0 7vw;
 
             .noneA {
@@ -275,6 +259,7 @@ header {
         padding: 2vh 0 0 0;
         @include media {
             text-align: center;
+            padding-bottom: 6px;
         }
     }
 }
@@ -291,11 +276,10 @@ header {
         .phone {
             text-align: center;
             @include media {
-                text-align: -webkit-center;
+                @include textme;
                 width: 100%;
-                align-self: center;
                 img {
-                    width: 37vw;
+                    width: 41vw;
                 }
             }
         }
@@ -303,23 +287,18 @@ header {
             padding: 1em;
 
             h5 {
-                font-size: 15px;
-                font-weight: 600;
-                font-family: $myfamily;
+                @include font(15px, 600, normal);
                 color: $tagcolor;
                 line-height: 0vh;
                 @include media {
-                    font-size: 18px;
-                    font-weight: 500;
+                    @include font(18px, 500, normal);
                     padding: 8vh 0 0 5vw;
                     line-height: 2;
                 }
             }
             h1 {
+                @include font(28px, 600, normal);
                 color: $textcolor1;
-                font-size: 28px;
-                font-weight: 600;
-                font-family: $myfamily;
                 line-height: 11vh;
                 @include media {
                     font-size: 40px;
@@ -328,10 +307,8 @@ header {
                 }
             }
             p {
+                @include font(16px, 500, normal);
                 color: $textcolor1;
-                font-size: 16px;
-                font-weight: 500;
-                font-weight: $myfamily;
                 line-height: 1.8;
                 @include media {
                     font-size: 18px;
@@ -349,18 +326,15 @@ header {
                     gap: 1vw;
                 }
                 a {
+                    @include font(14px, 600, normal);
                     text-decoration: none;
                     color: $textcolor1;
                     border-radius: 10px;
-                    font-size: 14px;
-                    font-weight: 600;
-                    width: 60vw;
-                    height: 8vh;
+                    @include WH (60vw,8vh);
                     text-align: center;
                     padding-top: 15px;
                     @include media {
-                        width: 16.7vw;
-                        height: 59px;
+                        @include WH (16.7px,59px);
                         padding-top: 20px;
                     }
                 }
@@ -407,10 +381,9 @@ header {
                 margin-top: 14vh;
             }
             h5 {
-                font-size: 12px;
-                font-weight: 900;
+                @include font(12px, 900, normal);
                 text-align: left;
-                color: #eab221;
+                color: $footercolor;
                 line-height: 1.8;
                 @include media {
                     font-size: 14px;
@@ -418,9 +391,8 @@ header {
                 }
             }
             h6 {
-                font-size: 18px;
-                font-weight: 600;
-                color: #2f2f2f;
+                @include font(18px, 600, normal);
+                color: $acolor;
                 text-align: left;
                 line-height: 2.8;
                 @include media {
@@ -436,36 +408,31 @@ header {
                 }
 
                 .apple {
-                    display: flex;
+                    @include textme(center, left, center);
                     border: 1px solid $textcolor1;
                     background-color: $textcolor1;
                     border-radius: 13px;
                     padding: 1em;
                     margin-top: 2vh;
-                    align-items: center;
-                    justify-content: center;
                 }
                 .down {
                     padding-left: 2vw;
                 }
                 .playstore {
-                    display: flex;
+                    @include textme(center, left, center);
                     border: 1px solid $textcolor1;
                     background-color: $textcolor1;
                     border-radius: 13px;
                     padding: 1em;
-                    align-items: center;
-                    justify-content: center;
                     @include media {
                         height: 72px;
                         margin-top: 2vh;
                     }
                 }
                 a {
+                    @include font(10px, 800, normal);
                     text-decoration: none;
-                    color: #2f2f2f;
-                    font-size: 10px;
-                    font-weight: 800;
+                    color: $acolor;
                 }
             }
         }
@@ -475,13 +442,12 @@ header {
     width: 100%;
     .text5 {
         padding: 1em;
-        background-color: rgba(255, 187, 11, 0.5);
+        background-color: $section5bg;
         .yellowcube {
             height: 18px;
             margin-top: 2px;
             @include media {
-                width: 29px;
-                height: 25px;
+               @include WH;
             }
         }
 
@@ -501,10 +467,8 @@ header {
         }
 
         h5 {
-            font-size: 15px;
-            font-weight: 600;
+            @include font(15px, 600, normal);
             color: $tagcolor;
-            font-family: $myfamily;
             line-height: 1.5;
             @include media {
                 font-size: 18px;
@@ -512,9 +476,7 @@ header {
             }
         }
         h1 {
-            font-size: 27px;
-            font-weight: 700;
-            font-family: $myfamily;
+            @include font(27px, 700, normal);
             line-height: 2.2;
             color: $tagcolor;
             padding-bottom: 5vh;
@@ -527,8 +489,7 @@ header {
             width: 100%;
 
             @include media {
-                display: flex;
-                justify-content: space-evenly;
+                @include flex1(space-evenly);
                 gap: 2vw;
                 padding-bottom: 41px;
             }
@@ -554,8 +515,7 @@ header {
                 }
 
                 h4 {
-                    font-weight: bold;
-                    font-size: 18px;
+                    @include font(18px, bold, normal);
                     line-height: 26px;
                     padding: 0 0 3vh 2vw;
                     @include media {
@@ -563,13 +523,11 @@ header {
                     }
                 }
                 p {
-                    font-weight: 500;
-                    font-size: 16px;
+                    @include font(16px, 500, normal);
                     line-height: 36px;
                 }
                 .rankingstars {
-                    display: flex;
-                    justify-content: space-evenly;
+                    @include flex1(space-evenly);
                     .star {
                         width: 100%;
                         padding-top: 9px;
@@ -583,8 +541,7 @@ header {
                             width: 89%;
                         }
                         p {
-                            font-size: 10px;
-                            font-weight: 500;
+                            @include font(10px, 500, normal);
                         }
                     }
                 }
@@ -598,53 +555,164 @@ footer {
     width: 100%;
     background-color: $tagcolor;
     padding: 1em;
+    @include media {
+        flex-direction: row;
+    }
+
+    .meetme {
+        @include media {
+            @include flex1(end);
+            width: 100%;
+            padding: 21px 0 0 0;
+
+            .company {
+                padding-left: 24px;
+                padding-right: 33px;
+            }
+        }
+    }
 
     .firstpart {
         p {
+            @include font(16px, 500, normal);
             color: $textcolor1;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 500;
             line-height: 32px;
             padding-bottom: 20px;
+            @include media {
+                padding-bottom: 30px;
+            }
+        }
+        @include media {
+            width: 100%;
+            padding: 5px 7vw 0 5vw;
         }
     }
     .none {
         display: none;
+        @include media {
+            display: flex;
+            flex-direction: column;
+        }
     }
     .corebanklogo {
         padding-bottom: 12px;
     }
     .quicks {
-        display: flex;
-        justify-content: space-evenly;
-        gap: 26vw;
+        @include flex1(flex-start);
+        gap: 21vw;
+        @include media {
+            gap: 0px;
+        }
 
+        .save {
+            padding: 0 0 5vh 0;
+            @include media {
+                padding: 0 0 0 0;
+            }
+        }
         h4 {
-            color: #ef9b11;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 20px;
-            line-height: 30px;
-            width: 100%;
+            @include font(20px, bold, normal);
+            color: $footercolor;
+            line-height: 20px;
+            padding-top: 6px;
             padding-bottom: 4vh;
+            width: 100%;
         }
         p {
+            @include font(18px, 500, normal);
             color: $textcolor1;
-            line-height: 2;
-            font-style: normal;
-            font-weight: 500;
-            font-size: 18px;
+            line-height: 3;
         }
     }
-    .contact{
+    .contact {
+        h4 {
+            @include font(20px, bold, normal);
+            color: $footercolor;
+            line-height: 53px;
+            padding-top: 15px;
+        }
+        p {
+            @include font(18px, 500, normal);
+            color: $textcolor1;
+            line-height: 1.7;
+            padding: 0px 21vw 3vh 0;
+            @include media {
+                font-size: 15px;
+                padding: 2vh 0 1vw 0;
+            }
+        }
+        .cust {
+            padding-bottom: 1vh;
+        }
 
-        h4{
-            color: #ef9b11;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 20px;
-            line-height: 77px;
+        .socialI {
+            padding-bottom: 4vh;
+        }
+        .end {
+            display: flex;
+            gap: 8px;
+            .logos {
+                padding: 0;
+                margin-left: 4px;
+            }
+        }
+        h6 {
+            @include font(15px, normal);
+            color: $textcolor1;
+            margin-top: 5px;
+        }
+        .footerstore {
+            display: flex;
+            flex-direction: column;
+            @include media {
+                display: none;
+            }
+        }
+        @include media {
+            align-items: center;
+        }
+    }
+
+    .footerplaystore {
+        @include flex1(center);
+        align-items: center;
+        border: 1px solid $footercolor;
+        background-color: $footercolor;
+        border-radius: 8px;
+        padding: 1em;
+        @include WH (179px,61px);
+        margin-bottom: 6vh;
+        @include media {
+            margin-bottom: 2vh;
+        }
+    }
+    .footerapplestore {
+        @include flex1(center);
+        align-items: center;
+        border: 1px solid $textcolor1;
+        background-color: $textcolor1;
+        border-radius: 8px;
+        padding: 1em;
+        @include WH (179px,61px);
+        margin-bottom: 6vh;
+    }
+    a {
+        @include font(14px, 500, normal);
+        text-decoration: none;
+        color: $tagcolor;
+        @include media {
+            @include font(13px, 600, normal);
+        }
+    }
+    .down {
+        padding-left: 8px;
+
+        h3 {
+            @include font(18px, 600, normal);
+            color: $tagcolor;
+        }
+        h4 {
+            font-size: 18px;
         }
     }
 }

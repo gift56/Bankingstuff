@@ -21,16 +21,12 @@ header .section1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: #8d979b;
   color: #ffff;
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
-  padding: 0 20px;
   height: 6vh;
+  padding: 10px 20px;
 }
 
 header .section1 .none {
@@ -42,20 +38,29 @@ header .section1 .none {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+    text-align: center;
   }
   header .section1 .dropdown {
     width: 0px;
   }
   header .section1 .nnn {
-    width: 20px;
+    width: 30px;
   }
   header .section1 .findme .ngn {
     padding: 0 6px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   header .section1 div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+    text-align: center;
     padding: 0 8px;
   }
 }
@@ -67,10 +72,6 @@ header .sec2 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   width: 100%;
   padding: 1em;
 }
@@ -88,12 +89,13 @@ header .sec2 .nav-links {
 }
 
 header .sec2 a {
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
-  font-size: 18px;
   color: #12082d;
   padding: 12px;
-  font-weight: 600;
 }
 
 @media screen and (min-width: 800px) {
@@ -113,6 +115,7 @@ header .sec2 a {
     color: #ffff;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#ef9b11), to(#405558));
     background-image: linear-gradient(180deg, #ef9b11 0%, #405558 100%);
+    padding-left: 29px;
   }
   header .sec2 .get:hover {
     background-color: #ffff;
@@ -121,18 +124,22 @@ header .sec2 a {
 }
 
 .mainview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-image: url(/style/imgs/mbg.png);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
   height: 278px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 @media screen and (min-width: 800px) {
@@ -154,9 +161,10 @@ header .sec2 a {
 }
 
 .mainview h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 24px;
+  font-size: 27px;
   font-weight: 700;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
   color: #12082d;
   width: 100%;
   padding: 0px 14vw 3vh 4vw;
@@ -173,9 +181,10 @@ header .sec2 a {
 }
 
 .mainview p {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 13px;
   font-weight: 600;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 20px;
   width: 100%;
   padding: 0 14vw 0 4vw;
@@ -213,17 +222,25 @@ header .sec2 a {
   .articles .article-image .box {
     -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    height: 23vh;
     width: 12vw;
+    height: 23vh;
     padding-top: 3vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .articles .article-image .box p {
     font-size: 20px;
     font-weight: 600;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
     color: black;
     line-height: 2;
   }
@@ -238,6 +255,8 @@ header .sec2 a {
 .article2 h4 {
   font-size: 14px;
   font-weight: 500;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: left;
   padding: 2vh 0 0 3vw;
   margin-top: 6vh;
@@ -245,9 +264,11 @@ header .sec2 a {
 
 @media screen and (min-width: 800px) {
   .article2 h4 {
-    margin-top: 18vh;
     font-size: 18px;
     font-weight: 500;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 18vh;
     line-height: 2;
     padding: 0 0 0 10vw;
   }
@@ -262,9 +283,11 @@ header .sec2 a {
 
 @media screen and (min-width: 800px) {
   .article2 h1 {
-    margin-bottom: 9vh;
     font-size: 46px;
     font-weight: bold;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 9vh;
     color: #12082d;
     padding: 0 0 0 10vw;
   }
@@ -329,9 +352,11 @@ header .sec2 a {
 }
 
 .article2 .articleflex p {
-  text-align: left;
   font-size: 15px;
   font-weight: 500;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
   padding: 0 0 0 2vw;
 }
 
@@ -380,6 +405,7 @@ header .sec2 a {
 @media screen and (min-width: 800px) {
   .article2 .scroll {
     text-align: center;
+    padding-bottom: 6px;
   }
 }
 
@@ -414,14 +440,20 @@ header .sec2 a {
 
 @media screen and (min-width: 800px) {
   .section3 .textflex .phone {
-    text-align: -webkit-center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
   }
   .section3 .textflex .phone img {
-    width: 37vw;
+    width: 41vw;
   }
 }
 
@@ -432,6 +464,7 @@ header .sec2 a {
 .section3 .textflex .text h5 {
   font-size: 15px;
   font-weight: 600;
+  font-style: normal;
   font-family: Arial, Helvetica, sans-serif;
   color: #12082d;
   line-height: 0vh;
@@ -441,16 +474,19 @@ header .sec2 a {
   .section3 .textflex .text h5 {
     font-size: 18px;
     font-weight: 500;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 8vh 0 0 5vw;
     line-height: 2;
   }
 }
 
 .section3 .textflex .text h1 {
-  color: #ffff;
   font-size: 28px;
   font-weight: 600;
+  font-style: normal;
   font-family: Arial, Helvetica, sans-serif;
+  color: #ffff;
   line-height: 11vh;
 }
 
@@ -463,10 +499,11 @@ header .sec2 a {
 }
 
 .section3 .textflex .text p {
-  color: #ffff;
   font-size: 16px;
   font-weight: 500;
-  font-weight: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffff;
   line-height: 1.8;
 }
 
@@ -501,11 +538,13 @@ header .sec2 a {
 }
 
 .section3 .textflex .text .buttons a {
+  font-size: 14px;
+  font-weight: 600;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   color: #ffff;
   border-radius: 10px;
-  font-size: 14px;
-  font-weight: 600;
   width: 60vw;
   height: 8vh;
   text-align: center;
@@ -514,7 +553,7 @@ header .sec2 a {
 
 @media screen and (min-width: 800px) {
   .section3 .textflex .text .buttons a {
-    width: 16.7vw;
+    width: 16.7px;
     height: 59px;
     padding-top: 20px;
   }
@@ -578,8 +617,10 @@ header .sec2 a {
 .section4 .contents .text4 h5 {
   font-size: 12px;
   font-weight: 900;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
   text-align: left;
-  color: #eab221;
+  color: #ef9b11;
   line-height: 1.8;
 }
 
@@ -593,6 +634,8 @@ header .sec2 a {
 .section4 .contents .text4 h6 {
   font-size: 18px;
   font-weight: 600;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
   color: #2f2f2f;
   text-align: left;
   line-height: 2.8;
@@ -628,17 +671,18 @@ header .sec2 a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: 1px solid #ffff;
   background-color: #ffff;
   border-radius: 13px;
   padding: 1em;
   margin-top: 2vh;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .section4 .contents .text4 .links-button .down {
@@ -649,16 +693,17 @@ header .sec2 a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: 1px solid #ffff;
   background-color: #ffff;
   border-radius: 13px;
   padding: 1em;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 @media screen and (min-width: 800px) {
@@ -669,10 +714,12 @@ header .sec2 a {
 }
 
 .section4 .contents .text4 .links-button a {
-  text-decoration: none;
-  color: #2f2f2f;
   font-size: 10px;
   font-weight: 800;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #2f2f2f;
 }
 
 .section5 {
@@ -723,8 +770,9 @@ header .sec2 a {
 .section5 .text5 h5 {
   font-size: 15px;
   font-weight: 600;
-  color: #12082d;
+  font-style: normal;
   font-family: Arial, Helvetica, sans-serif;
+  color: #12082d;
   line-height: 1.5;
 }
 
@@ -738,6 +786,7 @@ header .sec2 a {
 .section5 .text5 h1 {
   font-size: 27px;
   font-weight: 700;
+  font-style: normal;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 2.2;
   color: #12082d;
@@ -801,8 +850,10 @@ header .sec2 a {
 }
 
 .section5 .text5 .textbox .mobilebox h4 {
-  font-weight: bold;
   font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 26px;
   padding: 0 0 3vh 2vw;
 }
@@ -814,8 +865,10 @@ header .sec2 a {
 }
 
 .section5 .text5 .textbox .mobilebox p {
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
   line-height: 36px;
 }
 
@@ -852,6 +905,8 @@ header .sec2 a {
 .section5 .text5 .textbox .mobilebox .rankingstars .plusno p {
   font-size: 10px;
   font-weight: 500;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 footer {
@@ -867,17 +922,69 @@ footer {
   padding: 1em;
 }
 
+@media screen and (min-width: 800px) {
+  footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  footer .meetme {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    width: 100%;
+    padding: 21px 0 0 0;
+  }
+  footer .meetme .company {
+    padding-left: 24px;
+    padding-right: 33px;
+  }
+}
+
 footer .firstpart p {
-  color: #ffff;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffff;
   line-height: 32px;
   padding-bottom: 20px;
 }
 
+@media screen and (min-width: 800px) {
+  footer .firstpart p {
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  footer .firstpart {
+    width: 100%;
+    padding: 5px 7vw 0 5vw;
+  }
+}
+
 footer .none {
   display: none;
+}
+
+@media screen and (min-width: 800px) {
+  footer .none {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 footer .corebanklogo {
@@ -888,35 +995,204 @@ footer .quicks {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  gap: 26vw;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 21vw;
+}
+
+@media screen and (min-width: 800px) {
+  footer .quicks {
+    gap: 0px;
+  }
+}
+
+footer .quicks .save {
+  padding: 0 0 5vh 0;
+}
+
+@media screen and (min-width: 800px) {
+  footer .quicks .save {
+    padding: 0 0 0 0;
+  }
 }
 
 footer .quicks h4 {
-  color: #ef9b11;
-  font-style: normal;
-  font-weight: bold;
   font-size: 20px;
-  line-height: 30px;
-  width: 100%;
+  font-weight: bold;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ef9b11;
+  line-height: 20px;
+  padding-top: 6px;
   padding-bottom: 4vh;
+  width: 100%;
 }
 
 footer .quicks p {
-  color: #ffff;
-  line-height: 2;
-  font-style: normal;
-  font-weight: 500;
   font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffff;
+  line-height: 3;
 }
 
 footer .contact h4 {
-  color: #ef9b11;
-  font-style: normal;
-  font-weight: bold;
   font-size: 20px;
-  line-height: 77px;
+  font-weight: bold;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ef9b11;
+  line-height: 53px;
+  padding-top: 15px;
+}
+
+footer .contact p {
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffff;
+  line-height: 1.7;
+  padding: 0px 21vw 3vh 0;
+}
+
+@media screen and (min-width: 800px) {
+  footer .contact p {
+    font-size: 15px;
+    padding: 2vh 0 1vw 0;
+  }
+}
+
+footer .contact .cust {
+  padding-bottom: 1vh;
+}
+
+footer .contact .socialI {
+  padding-bottom: 4vh;
+}
+
+footer .contact .end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+}
+
+footer .contact .end .logos {
+  padding: 0;
+  margin-left: 4px;
+}
+
+footer .contact h6 {
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffff;
+  margin-top: 5px;
+}
+
+footer .contact .footerstore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 800px) {
+  footer .contact .footerstore {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  footer .contact {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+footer .footerplaystore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #ef9b11;
+  background-color: #ef9b11;
+  border-radius: 8px;
+  padding: 1em;
+  width: 179px;
+  height: 61px;
+  margin-bottom: 6vh;
+}
+
+@media screen and (min-width: 800px) {
+  footer .footerplaystore {
+    margin-bottom: 2vh;
+  }
+}
+
+footer .footerapplestore {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #ffff;
+  background-color: #ffff;
+  border-radius: 8px;
+  padding: 1em;
+  width: 179px;
+  height: 61px;
+  margin-bottom: 6vh;
+}
+
+footer a {
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #12082d;
+}
+
+@media screen and (min-width: 800px) {
+  footer a {
+    font-size: 13px;
+    font-weight: 600;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
+
+footer .down {
+  padding-left: 8px;
+}
+
+footer .down h3 {
+  font-size: 18px;
+  font-weight: 600;
+  font-style: normal;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #12082d;
+}
+
+footer .down h4 {
+  font-size: 18px;
 }
 /*# sourceMappingURL=bank.css.map */
