@@ -180,6 +180,13 @@ header .sec2 .slideshow {
   height: 278px;
 }
 
+@media screen and (min-width: 500px) {
+  .mainview {
+    height: 504px;
+    background-position: 22% 0;
+  }
+}
+
 @media screen and (min-width: 960px) {
   .mainview {
     background-image: url(/style/imgs/guywithtea.png);
@@ -209,10 +216,18 @@ header .sec2 .slideshow {
   text-align: left;
 }
 
+@media screen and (min-width: 500px) {
+  .mainview h1 {
+    font-size: 32px;
+    width: 65vw;
+    line-height: 1.4;
+  }
+}
+
 @media screen and (min-width: 960px) {
   .mainview h1 {
     font-size: 50px;
-    width: 88vw;
+    width: 89vw;
     padding: 0 54vw 0 3vw;
     line-height: 1.1;
     margin-bottom: 3vh;
@@ -231,11 +246,23 @@ header .sec2 .slideshow {
   text-align: left;
 }
 
+@media screen and (min-width: 500px) {
+  .mainview p {
+    width: 70%;
+    line-height: 1.8;
+    font-size: 15px;
+    font-weight: 600;
+    font-style: normal;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
 @media screen and (min-width: 960px) {
   .mainview p {
     font-size: 18px;
     padding: 3vh 53vw 0 3vw;
     line-height: 1.6;
+    width: 92vw;
   }
 }
 
