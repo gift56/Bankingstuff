@@ -387,6 +387,9 @@ header {
 }
 .section4 {
     width: 100%;
+    @include media {
+        margin-bottom: 4vh;
+    }
 
     .contents {
         display: flex;
@@ -395,6 +398,9 @@ header {
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
+        @include media {
+            padding: 0;
+        }
 
         .imagesflex {
             width: 77%;
@@ -402,11 +408,12 @@ header {
             @include media {
                 width: 100%;
                 text-align: right;
-                margin-right: 12vw;
+                align-self: flex-end;
+                margin-right: 8vw;
 
                 .smartphone {
-                    width: 20vw;
-                    height: 49vh;
+                    width: 12vw;
+                    height: 44vh;
                 }
             }
         }
@@ -415,6 +422,8 @@ header {
             align-self: center;
             margin-top: auto;
             @include media {
+                padding: 1em;
+                margin-bottom: 4vh;
             }
             h5 {
                 @include font(12px, 900, normal);
