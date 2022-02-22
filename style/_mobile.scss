@@ -7,7 +7,7 @@ header {
         color: $textcolor1;
         font-family: $myfamily;
         @include WH(100%, 34px);
-        padding: 10px 20px;
+        padding: 6px 20px;
 
         .none {
             display: none;
@@ -130,7 +130,8 @@ header {
         text-align: left;
         @include media {
             font-size: 50px;
-            padding: 0 55vw 0 3vw;
+            width: 88vw;
+            padding: 0 54vw 0 3vw;
             line-height: 1.1;
             margin-bottom: 3vh;
         }
@@ -395,7 +396,7 @@ header {
 
                 .smartphone {
                     width: 20vw;
-                    height: 43vh;
+                    height: 49vh;
                 }
             }
         }
@@ -663,6 +664,7 @@ footer {
             @include media {
                 font-size: 15px;
                 padding: 2vh 0 1vw 0;
+                line-height: 1.5;
             }
         }
         .cust {
@@ -722,7 +724,7 @@ footer {
         margin-bottom: 6vh;
     }
     a {
-        @include font(14px, 500, normal);
+        @include font(13px, 500, normal);
         text-decoration: none;
         color: $tagcolor;
         @include media {
