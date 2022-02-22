@@ -8,7 +8,7 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  width: 103%;
+  width: 100%;
 }
 
 html {
@@ -42,13 +42,14 @@ header .section1 .none {
   header .section1 {
     height: 49px;
   }
+  header .section1 .padlock {
+    padding-right: 4px;
+    width: 15px;
+  }
   header .section1 .none {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-item-align: center;
-        align-self: center;
-    text-align: center;
   }
   header .section1 .dropdown {
     width: 0px;
@@ -66,9 +67,9 @@ header .section1 .none {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-item-align: center;
-        align-self: center;
-    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding: 0 8px;
   }
 }
@@ -180,17 +181,13 @@ header .sec2 .slideshow {
   height: 278px;
 }
 
-@media screen and (min-width: 500px) {
-  .mainview {
-    height: 504px;
-    background-position: 22% 0;
-  }
-}
-
 @media screen and (min-width: 960px) {
   .mainview {
     background-image: url(/style/imgs/guywithtea.png);
     height: 90vh;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
   .mainview .right-arrow {
     display: none;
@@ -216,14 +213,6 @@ header .sec2 .slideshow {
   text-align: left;
 }
 
-@media screen and (min-width: 500px) {
-  .mainview h1 {
-    font-size: 32px;
-    width: 65vw;
-    line-height: 1.4;
-  }
-}
-
 @media screen and (min-width: 960px) {
   .mainview h1 {
     font-size: 50px;
@@ -244,17 +233,6 @@ header .sec2 .slideshow {
   padding: 0 14vw 0 4vw;
   color: #12082d;
   text-align: left;
-}
-
-@media screen and (min-width: 500px) {
-  .mainview p {
-    width: 70%;
-    line-height: 1.8;
-    font-size: 15px;
-    font-weight: 600;
-    font-style: normal;
-    font-family: "Poppins", sans-serif;
-  }
 }
 
 @media screen and (min-width: 960px) {

@@ -10,4 +10,4 @@
 #Completed the mobileview for section 5
 #Completed section 5
 #Completed Corebank
-#Fixied the problem on responsivenes
+#Fixied hr scrolling
