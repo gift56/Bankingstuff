@@ -28,7 +28,7 @@ header .section1 {
           justify-content: space-between;
   background-color: #8d979b;
   color: #ffff;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   width: 100%;
   height: 34px;
   padding: 10px 20px;
@@ -101,7 +101,7 @@ header .sec2 a {
   font-size: 18px;
   font-weight: 600;
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   text-decoration: none;
   color: #12082d;
   padding: 12px;
@@ -202,7 +202,7 @@ header .sec2 .slideshow {
   font-size: 27px;
   font-weight: 700;
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #12082d;
   width: 100%;
   padding: 0px 14vw 3vh 4vw;
@@ -222,7 +222,7 @@ header .sec2 .slideshow {
   font-size: 13px;
   font-weight: 600;
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 20px;
   width: 100%;
   padding: 0 14vw 0 4vw;
@@ -282,7 +282,7 @@ header .sec2 .slideshow {
     font-size: 20px;
     font-weight: 600;
     font-style: normal;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif;
     color: black;
     line-height: 2;
   }
@@ -298,7 +298,7 @@ header .sec2 .slideshow {
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: left;
   padding: 2vh 0 0 3vw;
   margin-top: 6vh;
@@ -309,7 +309,7 @@ header .sec2 .slideshow {
     font-size: 18px;
     font-weight: 500;
     font-style: normal;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif;
     margin-top: 18vh;
     line-height: 2;
     padding: 0 0 0 10vw;
@@ -328,7 +328,7 @@ header .sec2 .slideshow {
     font-size: 46px;
     font-weight: bold;
     font-style: normal;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif;
     margin-bottom: 9vh;
     color: #12082d;
     padding: 0 0 0 10vw;
@@ -397,7 +397,7 @@ header .sec2 .slideshow {
   font-size: 15px;
   font-weight: 500;
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: left;
   padding: 0 0 0 2vw;
 }
@@ -507,7 +507,7 @@ header .sec2 .slideshow {
   font-size: 15px;
   font-weight: 600;
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #12082d;
   line-height: 0vh;
 }
@@ -517,7 +517,7 @@ header .sec2 .slideshow {
     font-size: 18px;
     font-weight: 500;
     font-style: normal;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif;
     padding: 8vh 0 0 5vw;
     line-height: 2;
   }
@@ -527,7 +527,7 @@ header .sec2 .slideshow {
   font-size: 28px;
   font-weight: 600;
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #ffff;
   line-height: 11vh;
 }
@@ -544,7 +544,7 @@ header .sec2 .slideshow {
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #ffff;
   line-height: 1.8;
 }
@@ -583,7 +583,7 @@ header .sec2 .slideshow {
   font-size: 14px;
   font-weight: 600;
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   text-decoration: none;
   color: #ffff;
   border-radius: 10px;
@@ -639,7 +639,7 @@ header .sec2 .slideshow {
   }
   .section4 .contents .imagesflex .smartphone {
     width: 20vw;
-    height: 300px;
+    height: 43vh;
   }
 }
 
@@ -655,7 +655,7 @@ header .sec2 .slideshow {
   font-size: 12px;
   font-weight: 900;
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: left;
   color: #ef9b11;
 }
@@ -668,10 +668,10 @@ header .sec2 .slideshow {
 }
 
 .section4 .contents .text4 h6 {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 600;
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #2f2f2f;
   text-align: left;
   line-height: 2.8;
@@ -753,7 +753,7 @@ header .sec2 .slideshow {
   font-size: 10px;
   font-weight: 800;
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   text-decoration: none;
   color: #2f2f2f;
 }
@@ -807,7 +807,7 @@ header .sec2 .slideshow {
   font-size: 15px;
   font-weight: 600;
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #12082d;
   line-height: 1.5;
 }
@@ -823,7 +823,7 @@ header .sec2 .slideshow {
   font-size: 27px;
   font-weight: 700;
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 2.2;
   color: #12082d;
   padding-bottom: 5vh;
@@ -889,7 +889,7 @@ header .sec2 .slideshow {
   font-size: 18px;
   font-weight: bold;
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 26px;
   padding: 0 0 3vh 2vw;
 }
@@ -904,7 +904,7 @@ header .sec2 .slideshow {
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 36px;
 }
 
@@ -942,7 +942,7 @@ header .sec2 .slideshow {
   font-size: 10px;
   font-weight: 500;
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 footer {
@@ -988,7 +988,7 @@ footer .firstpart p {
   font-size: 16px;
   font-weight: 500;
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #ffff;
   line-height: 32px;
   padding-bottom: 20px;
@@ -1057,7 +1057,7 @@ footer .quicks h4 {
   font-size: 20px;
   font-weight: bold;
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #ef9b11;
   line-height: 20px;
   padding-top: 6px;
@@ -1069,7 +1069,7 @@ footer .quicks p {
   font-size: 18px;
   font-weight: 500;
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #ffff;
   line-height: 3;
 }
@@ -1078,7 +1078,7 @@ footer .contact h4 {
   font-size: 20px;
   font-weight: bold;
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #ef9b11;
   line-height: 53px;
   padding-top: 15px;
@@ -1088,7 +1088,7 @@ footer .contact p {
   font-size: 18px;
   font-weight: 500;
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #ffff;
   line-height: 1.7;
   padding: 0px 21vw 3vh 0;
@@ -1125,7 +1125,7 @@ footer .contact h6 {
   font-size: 15px;
   font-weight: normal;
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #ffff;
   margin-top: 5px;
 }
@@ -1203,7 +1203,7 @@ footer a {
   font-size: 14px;
   font-weight: 500;
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   text-decoration: none;
   color: #12082d;
 }
@@ -1213,7 +1213,7 @@ footer a {
     font-size: 13px;
     font-weight: 600;
     font-style: normal;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Poppins", sans-serif;
   }
 }
 
@@ -1225,7 +1225,7 @@ footer .down h3 {
   font-size: 18px;
   font-weight: 600;
   font-style: normal;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #12082d;
 }
 

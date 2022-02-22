@@ -395,7 +395,7 @@ header {
 
                 .smartphone {
                     width: 20vw;
-                    height: 300px;
+                    height: 43vh;
                 }
             }
         }
@@ -415,7 +415,7 @@ header {
                 }
             }
             h6 {
-                @include font(18px, 600, normal);
+                @include font(17px, 600, normal);
                 color: $acolor;
                 text-align: left;
                 line-height: 2.8;
