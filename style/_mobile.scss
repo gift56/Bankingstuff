@@ -51,6 +51,7 @@ header {
             display: none;
             // display: flex;
             // flex-direction: column;
+            // line-height: 2;
         }
         a {
             @include font(18px, 600, normal);
@@ -394,6 +395,7 @@ header {
 
                 .smartphone {
                     width: 20vw;
+                    height: 300px;
                 }
             }
         }
@@ -402,13 +404,11 @@ header {
             align-self: center;
             margin-top: auto;
             @include media {
-                margin-top: 14vh;
             }
             h5 {
                 @include font(12px, 900, normal);
                 text-align: left;
                 color: $footercolor;
-                line-height: 1.8;
                 @include media {
                     font-size: 14px;
                     margin-left: 6vw;
