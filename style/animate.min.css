@@ -1618,6 +1618,7 @@
 .animate__fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
+  animation-duration: 2s;
 }
 @-webkit-keyframes fadeInDown {
   0% {
@@ -1758,6 +1759,7 @@
 .animate__fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
+  animation-duration: 2s;
 }
 @-webkit-keyframes fadeInRightBig {
   0% {
