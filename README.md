@@ -11,3 +11,4 @@
 #Completed section 5
 #Completed Corebank
 #Fixied hr scrolling
+#Added animation for better view

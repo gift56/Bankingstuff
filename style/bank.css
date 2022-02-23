@@ -155,6 +155,7 @@ header .sec2 .slideshow {
     background-image: -webkit-gradient(linear, left top, left bottom, from(#ef9b11), to(#405558));
     background-image: linear-gradient(180deg, #ef9b11 0%, #405558 100%);
     padding-left: 29px;
+    padding-bottom: 38px;
   }
   header .sec2 .get:hover {
     background-color: #ffff;
@@ -542,7 +543,7 @@ header .sec2 .slideshow {
   .section3 .textflex .text h1 {
     font-size: 40px;
     color: #12082d;
-    padding: 5vh 0 4vh 5.6vw;
+    padding: 1vh 0 4vh 5.6vw;
   }
 }
 
@@ -601,7 +602,7 @@ header .sec2 .slideshow {
 
 @media screen and (min-width: 960px) {
   .section3 .textflex .text .buttons a {
-    width: 145.7px;
+    width: 211.7px;
     height: 60px;
     padding-top: 20px;
   }

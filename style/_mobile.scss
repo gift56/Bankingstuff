@@ -96,6 +96,7 @@ header {
                 color: $textcolor1;
                 background-image: $btn;
                 padding-left: 29px;
+                padding-bottom: 38px;
                 &:hover {
                     background-color: $textcolor1;
                     color: $tagcolor;
@@ -339,7 +340,7 @@ header {
                 @include media {
                     font-size: 40px;
                     color: $tagcolor;
-                    padding: 5vh 0 4vh 5.6vw;
+                    padding: 1vh 0 4vh 5.6vw;
                 }
             }
             p {
@@ -370,7 +371,7 @@ header {
                     text-align: center;
                     padding-top: 15px;
                     @include media {
-                        @include WH(145.7px, 60px);
+                        @include WH(211.7px, 60px);
                         padding-top: 20px;
                     }
                 }
