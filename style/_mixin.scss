@@ -2,7 +2,7 @@
     display: flex;
     justify-content: $justify;
 }
-@mixin media {
+@mixin media ($midwidth:960px) {
     @media screen and (min-width: $midwidth) {
         @content;
     }

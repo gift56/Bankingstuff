@@ -602,7 +602,7 @@ header .sec2 .slideshow {
 
 @media screen and (min-width: 960px) {
   .section3 .textflex .text .buttons a {
-    width: 211.7px;
+    width: 263.7px;
     height: 60px;
     padding-top: 20px;
   }
@@ -661,6 +661,13 @@ header .sec2 .slideshow {
   .section4 .contents .imagesflex .smartphone {
     width: 15vw;
     height: 44vh;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .section4 .contents .imagesflex .smartphone {
+    width: 30%;
+    height: 61vh;
   }
 }
 

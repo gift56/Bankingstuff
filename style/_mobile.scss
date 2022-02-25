@@ -371,7 +371,7 @@ header {
                     text-align: center;
                     padding-top: 15px;
                     @include media {
-                        @include WH(211.7px, 60px);
+                        @include WH(263.7px, 60px);
                         padding-top: 20px;
                     }
                 }
@@ -415,6 +415,12 @@ header {
                 .smartphone {
                     width: 15vw;
                     height: 44vh;
+                }
+            }
+            @include media (1500px){
+                .smartphone{
+                    width: 30%;
+                    height: 61vh;
                 }
             }
         }
