@@ -18,4 +18,4 @@
 You can view my updated work at:
 
 
-<a href="https://efegiftprojectcorebank.netlify.app">efegiftprojectcorebank.netlify.app</a>
+<a href="https://efegiftprojectcorebank.netlify.app" target="_blank">efegiftprojectcorebank.netlify.app</a>
