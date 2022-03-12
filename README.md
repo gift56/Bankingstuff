@@ -12,3 +12,10 @@
 #Completed Corebank
 #Fixied hr scrolling
 #Added animation for better view
+
+
+
+You can view my updated work at:
+
+
+<a href="https://efegiftprojectcorebank.netlify.app">efegiftprojectcorebank.netlify.app</a>
