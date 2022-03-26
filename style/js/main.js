@@ -1,0 +1,1 @@
+icon.addEventListener('click', () => freenav.classList.toggle('show'));

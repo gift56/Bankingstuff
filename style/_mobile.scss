@@ -14,7 +14,7 @@ header {
         }
         @include media {
             height: 49px;
-            .padlock{
+            .padlock {
                 padding-right: 4px;
                 width: 15px;
             }
@@ -53,16 +53,31 @@ header {
             margin-left: 14px;
         }
         .nav-links {
-            display: none;
-            // display: flex;
-            // flex-direction: column;
-            // line-height: 2;
-        }
-        a {
-            @include font(18px, 600, normal);
-            text-decoration: none;
-            color: $tagcolor;
-            padding: 12px;
+            @media screen and (max-width: 1000px) {
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                left: -100%;
+                background-color: $firstbgcolor;
+                text-align: center;
+                z-index: 2;
+                width: 100%;
+                transition: all 0.5s;
+                &.show{
+                    left: 0;
+                    margin-top: 28px;
+                }
+            }
+            
+            a {
+                @include font(18px, 600, normal);
+                text-decoration: none;
+                color: $tagcolor;
+                padding: 12px;
+                @media screen and (max-width: 1000px) {
+                    color: $textcolor1 !important;
+                }
+            }
         }
         .slideshow {
             position: absolute;
@@ -73,6 +88,9 @@ header {
             margin-top: 41px;
             width: 69vw;
             left: 0;
+            @media screen and (max-width: 1000px) {
+                width: 100%;
+            }
         }
         @include media {
             .slideshow {
@@ -86,20 +104,20 @@ header {
             .mobilenone {
                 display: none;
             }
+
             .nav-links {
                 display: flex;
-            }
-            .get {
-                border: 1px solid $btn;
-                @include WH(136px, 43px);
-                border-radius: 10px;
-                color: $textcolor1;
-                background-image: $btn;
-                padding-left: 29px;
-                padding-bottom: 38px;
-                &:hover {
-                    background-color: $textcolor1;
-                    color: $tagcolor;
+                .get {
+                    border: 1px solid $btn;
+                    @include WH(136px, 43px);
+                    border-radius: 10px;
+                    color: $textcolor1;
+                    background-image: $btn;
+                    padding: 8px 27px;
+                    &:hover {
+                        background-color: $textcolor1;
+                        color: $tagcolor;
+                    }
                 }
             }
         }
@@ -316,7 +334,7 @@ header {
                 @include textme;
                 width: 100%;
                 img {
-                    width: 41vw;
+                    width: 34vw;
                 }
             }
         }
@@ -417,8 +435,8 @@ header {
                     height: 44vh;
                 }
             }
-            @include media (1500px){
-                .smartphone{
+            @include media(1500px) {
+                .smartphone {
                     width: 30%;
                     height: 61vh;
                 }

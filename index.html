@@ -11,9 +11,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300;1,500&display=swap"
         rel="stylesheet">
-        <link rel="stylesheet" href="/style/animate.min.css">
-        <link rel="stylesheet" href="/style/bank.css">
-        <script src="/style/wow.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style/animate.min.css">
+    <link rel="stylesheet" href="/style/bank.css">
+    <script src="/style/wow.min.js"></script>
 </head>
 
 <body>
@@ -50,7 +53,7 @@
                     <img src="/style/imgs/corebanklogo.png" alt="logo" class="corebank">
                 </div>
                 <div class="slideshow">
-                    <div class="nav-links">
+                    <div class="nav-links" id="freenav">
                         <a href="#">Home</a>
                         <a href="#">About</a>
                         <a href="#">Services <img src="/style/imgs/dropdown.png" alt="dropdown" class="dropdown"></a>
@@ -61,8 +64,8 @@
                         <a href="#" class="get">Get App</a>
                     </div>
                 </div>
-                <div class="mobilenone">
-                    <img src="/style/imgs/menu.png" alt="menu" class="menu">
+                <div class="mobilenone" id="icon">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
             </div>
         </section>
@@ -157,10 +160,12 @@
         <div class="section3">
             <div class="textflex">
                 <div class="text">
-                    <h5 class="h-house  wow animate__animated animate__fadeInDown"><img src="/style/imgs/greysquare.png" alt="cube" width="20px" /> Financial
+                    <h5 class="h-house  wow animate__animated animate__fadeInDown"><img src="/style/imgs/greysquare.png"
+                            alt="cube" width="20px" /> Financial
                         Freedom</h5>
                     <h1 class="h-house  wow animate__animated animate__fadeInRight">Build with us</h1>
-                    <p class=" wow animate__animated animate__fadeIn">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    <p class=" wow animate__animated animate__fadeIn">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut
                         labore
                         et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
                     </p>
@@ -368,6 +373,7 @@
                 </div>
             </div>
     </footer>
+    <script src="/style/js/main.js"></script>
     <script>
         var wow = new WOW(
             {
@@ -386,7 +392,6 @@
         );
         wow.init();
     </script>
-
 </body>
 
 </html>

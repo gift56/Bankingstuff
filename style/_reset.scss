@@ -1,14 +1,22 @@
-*{
+* {
     border: 0;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
+   
+    #icon {
+        @media screen and (max-width: 1000px) {
+            display: flex;
+            align-items: center;
+            font-size: 40px;
+        }
+    }
 }
-html{
+html {
     width: 100%;
 }

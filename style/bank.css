@@ -11,6 +11,18 @@ body {
   width: 100%;
 }
 
+@media screen and (max-width: 1000px) {
+  body #icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 40px;
+  }
+}
+
 html {
   width: 100%;
 }
@@ -94,11 +106,31 @@ header .sec2 .corebank {
   margin-left: 14px;
 }
 
-header .sec2 .nav-links {
-  display: none;
+@media screen and (max-width: 1000px) {
+  header .sec2 .nav-links {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    left: -100%;
+    background-color: #8d979b;
+    text-align: center;
+    z-index: 2;
+    width: 100%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  header .sec2 .nav-links.show {
+    left: 0;
+    margin-top: 28px;
+  }
 }
 
-header .sec2 a {
+header .sec2 .nav-links a {
   font-size: 18px;
   font-weight: 600;
   font-style: normal;
@@ -106,6 +138,12 @@ header .sec2 a {
   text-decoration: none;
   color: #12082d;
   padding: 12px;
+}
+
+@media screen and (max-width: 1000px) {
+  header .sec2 .nav-links a {
+    color: #ffff !important;
+  }
 }
 
 header .sec2 .slideshow {
@@ -122,6 +160,12 @@ header .sec2 .slideshow {
   margin-top: 41px;
   width: 69vw;
   left: 0;
+}
+
+@media screen and (max-width: 1000px) {
+  header .sec2 .slideshow {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 960px) {
@@ -146,7 +190,7 @@ header .sec2 .slideshow {
     display: -ms-flexbox;
     display: flex;
   }
-  header .sec2 .get {
+  header .sec2 .nav-links .get {
     border: 1px solid linear-gradient(180deg, #ef9b11 0%, #405558 100%);
     width: 136px;
     height: 43px;
@@ -154,10 +198,9 @@ header .sec2 .slideshow {
     color: #ffff;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#ef9b11), to(#405558));
     background-image: linear-gradient(180deg, #ef9b11 0%, #405558 100%);
-    padding-left: 29px;
-    padding-bottom: 38px;
+    padding: 8px 27px;
   }
-  header .sec2 .get:hover {
+  header .sec2 .nav-links .get:hover {
     background-color: #ffff;
     color: #12082d;
   }
@@ -502,7 +545,7 @@ header .sec2 .slideshow {
     width: 100%;
   }
   .section3 .textflex .phone img {
-    width: 41vw;
+    width: 34vw;
   }
 }
 
